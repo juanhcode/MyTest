@@ -3,11 +3,12 @@ const db = require('../connection');
 const Usuario = require('./Usuario');
 
 
-const CasoPrueba = db.define('casoPrueba', {
+const CasoPrueba = db.define('caso_de_prueba', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        allowNull: false
+        allowNull: false,
+        autoIncrement: true
     },
     nombre: {
         type: DataTypes.STRING,

@@ -8,7 +8,8 @@ const db = new Sequelize(
     {
         host: process.env.POSTGRESQL_ADDON_HOST,
         dialect: 'postgres',
-        loggin: false
+        logging: false,
+        port: 50013
     }
 )
 

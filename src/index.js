@@ -1,16 +1,22 @@
 const express =  require('express');
 const app =  express();
-const port = 4040
+const cors = require('cors');
+const morgan = require('morgan');
+const caso = require('./v1/caso.route');
 
-app.get('/', (req, res) => {
-    return res.status(200).json({ 
-      nome:  'Learn SonarQube code coverage',
-      status: true 
-    });
-});
 
-let server = app.listen(port, () => {
-    console.log(`Application server running on ${port}`);
-});
+app.use(express.json());
+app.use(cors());
+app.use(morgan("dev"));
+
+
+//Routes
+app.use('/v1/caso',caso);
+
+
+
+const server = app.listen(process.env.PORT || 3000, () => {
+  console.log("Server running in port " + process.env.PORT || 3000);
+})
 
 module.exports  = server;

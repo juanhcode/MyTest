@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\index.test.js">
-    <testCase name="Get Endpoints Get" duration="147"/>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js">
   </file>
 </testExecutions>
