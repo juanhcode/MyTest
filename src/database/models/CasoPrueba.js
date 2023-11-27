@@ -1,9 +1,9 @@
 const { DataTypes } = require('sequelize');
 const db = require('../connection');
-const Usuario = require('./Usuario');
+const Proyecto = require('./Proyecto');
 
 
-const CasoPrueba = db.define('casoPrueba', {
+const CasoPrueba = db.define('caso_de_prueba', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -34,10 +34,10 @@ const CasoPrueba = db.define('casoPrueba', {
     expectativas: {
         type: DataTypes.STRING
     },
-    usuario_id: {
+    proyecto_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: Usuario,
+            model: Proyecto,
             key: 'id'
         }
     }
@@ -48,6 +48,6 @@ const CasoPrueba = db.define('casoPrueba', {
     }
 )
 
-CasoPrueba.belongsTo(Usuario, {foreignKey:'id'});
+CasoPrueba.belongsTo(Proyecto, {foreignKey:'id'});
 
 module.exports = CasoPrueba
