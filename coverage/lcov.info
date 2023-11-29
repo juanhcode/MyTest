@@ -1,7 +1,7 @@
 TN:
 SF:src\index.js
-FN:14,(anonymous_0)
-FN:21,(anonymous_1)
+FN:16,(anonymous_0)
+FN:23,(anonymous_1)
 FNF:2
 FNH:2
 FNDA:1,(anonymous_0)
@@ -14,12 +14,12 @@ DA:5,2
 DA:7,2
 DA:9,2
 DA:10,2
-DA:12,2
 DA:14,2
-DA:15,1
-DA:21,2
-DA:22,2
-DA:25,2
+DA:16,2
+DA:17,1
+DA:23,2
+DA:24,2
+DA:27,2
 LF:14
 LH:14
 BRF:0
