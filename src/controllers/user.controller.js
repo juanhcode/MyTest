@@ -5,6 +5,7 @@ const creationUser = async(req,res) => {
 
     try {
         const usuarioCreated = await userServices.createUser(body)
+        console.log(res.status);
         res.status(201).json({
             msg: `Usuario: ${usuarioCreated.nombre} ha sido creado correctamente`
         })
