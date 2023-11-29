@@ -7,7 +7,9 @@ require('dotenv').config();
 const users = require('./v1/routes/user.route');
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://proyecto-mytest.fly.dev'
+}));
 
 app.use('/v1/user',users)
 
