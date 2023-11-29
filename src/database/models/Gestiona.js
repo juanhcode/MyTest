@@ -1,9 +1,9 @@
 const { DataTypes } = require('sequelize');
 const db = require('../connection');
 const Usuario = require('./Usuario');
-const Permiso = require('./Permiso');
+const Proyecto = require('./Proyecto');
 
-const PermisoUsuario = db.define('permiso_usuario', {
+const Gestiona = db.define('gestiona', {
     usuario_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -13,15 +13,15 @@ const PermisoUsuario = db.define('permiso_usuario', {
             key: 'id'
         }
     },
-    permiso_id: {
+    proyecto_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         allowNull: false,
         references: {
-            model: Usuario,
+            model: Proyecto,
             key: 'id'
         }
-    },
+    }
 },
     {
         timestamps: false,
@@ -29,7 +29,7 @@ const PermisoUsuario = db.define('permiso_usuario', {
     }
 )
 
-PermisoUsuario.belongsTo(Usuario,{foreignKey: 'id'});
-PermisoUsuario.belongsTo(Permiso,{foreignKey: 'id'})
+Gestiona.belongsTo(Usuario,{foreignKey: 'id'});
+Gestiona.belongsTo(Proyecto,{foreignKey:'id'});
 
-module.exports = PermisoUsuario
+module.exports = Gestiona

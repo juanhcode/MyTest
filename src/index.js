@@ -1,6 +1,17 @@
 const express =  require('express');
 const app =  express();
-const port = 4040
+const port = 3000
+const cors = require('cors');
+require('dotenv').config();
+
+const users = require('./v1/routes/user.route');
+
+app.use(express.json());
+app.use(cors({
+  origin: 'https://proyecto-mytest.fly.dev'
+}));
+
+app.use('/v1/user',users)
 
 app.get('/', (req, res) => {
     return res.status(200).json({ 
