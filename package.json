@@ -41,6 +41,7 @@
     "supertest": "^6.3.3"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.4.11",
     "jest-sonar-reporter": "^2.0.0"
   }
 }

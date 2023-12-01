@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="V:\Trabajos_JS\MyTest\src\tests\index.test.js">
-    <testCase name="Get Endpoints Get" duration="48"/>
+    <testCase name="Get Endpoints Get" duration="44"/>
   </file>
   <file path="V:\Trabajos_JS\MyTest\src\tests\user.test.js">
-    <testCase name="Pruebas de registro de usuario Post" duration="3771"/>
-    <testCase name="Pruebas de registro de usuario Post" duration="169"/>
-    <testCase name="Pruebas de registro de usuario Post" duration="167"/>
+    <testCase name="Pruebas de registro de usuario Post" duration="2860"/>
+    <testCase name="Pruebas de registro de usuario Post" duration="189"/>
+    <testCase name="Pruebas de registro de usuario Post" duration="183"/>
   </file>
 </testExecutions>

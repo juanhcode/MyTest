@@ -8,25 +8,25 @@ describe('Pruebas de registro de usuario', () => {
       const response = await app
       .post('/v1/user')
       .send({
-        nombre: "usuario5",
-        correo: "usuario5@gmail.com",
+        nombre: "usuario9",
+        correo: "usuario9@gmail.com",
         contrasenia: "123456"
       })
       expect(response.statusCode).toEqual(201);
-      expect(response.body.msg).toBe("Usuario: usuario5 ha sido creado correctamente")
+      expect(response.body.msg).toBe("Usuario: usuario9 ha sido creado correctamente")
     })
   
     it('Post', async () => {
       const response = await app
       .post('/v1/user')
       .send({
-        nombre: "usuario5",
-        correo: "usuario5@gmail.com",
+        nombre: "usuario9",
+        correo: "usuario9@gmail.com",
         contrasenia: "123456"
       })
       const parsedResponse = JSON.parse(response.text);
       expect(response.status).toBe(400);
-      expect(parsedResponse.errors[0].msg).toBe('El correo usuario5@gmail.com ya esta registrado')
+      expect(parsedResponse.errors[0].msg).toBe('El correo usuario9@gmail.com ya esta registrado')
     })
   
     it('Post', async () => {
