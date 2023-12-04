@@ -7,7 +7,7 @@ const app = request(server)
 describe('Test crear casos de prueba', () => {
     it('Post', async () => {
         const res = await app
-            .get('/v1/caso')
+            .post('/v1/caso')
             .send({
                 nombre: faker.word.words(),
                 descripcion: faker.word.words(),
@@ -19,9 +19,9 @@ describe('Test crear casos de prueba', () => {
                 expectativas: faker.lorem.sentence(),
                 proyecto_id:2
             });
-            console.log(res);
         expect(res.statusCode).toEqual(201);
-    })
+    });
+    
 })
 afterAll(async () => {
     server.close();
