@@ -1,4 +1,3 @@
-const { response } = require("express");
 const {
   emailExists
 } = require('../helpers/db-validators')
@@ -6,7 +5,7 @@ const bcrypt = require('bcrypt');
 
 const { tokenSign } = require("../helpers/generateToken");
 
-const login = async (req, res = response) => {
+const login = async (req, res) => {
   try {
     const { correo, contrasenia } = req.body;
     const emailValidation = await emailExists(

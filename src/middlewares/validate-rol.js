@@ -1,8 +1,6 @@
-const { response } = require("express")
-
 //Obteniendo los roles que llegan desde el archivo /routes/user.js
 const hasRol = (...rols) => {
-    return (req, res = response, next) => {
+    return (req, res, next) => {
 
         if (!req.usuario) {
             return res.status(500).json({

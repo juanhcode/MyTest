@@ -1,5 +1,3 @@
-const { response } = require('express');
-
 //Paquete validacion de campos en el body
 const {validationResult} = require('express-validator');
 
