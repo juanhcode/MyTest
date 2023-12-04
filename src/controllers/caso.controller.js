@@ -26,6 +26,24 @@ const crearCaso = async(req,res)=>{
     }
 }
 
+
+const deleteCaso = async (req, res) => {
+
+    const {id} = req.params;
+
+    const casoExists = await libroServices.validationBookExistsById(id)
+    if(!bookExists){
+        return res.status(404).json({
+            msg: `No existe el libro con el id ${id}`
+        })
+    }
+    
+    await libroServices.deleteBook(id);
+    res.json({
+        msg: `Libro con el id ${id} ha sido eliminado.`
+    });
+}
+
 module.exports = {
     crearCaso,
 }
