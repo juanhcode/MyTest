@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="V:\Trabajos_JS\MyTest\src\tests\index.test.js">
-    <testCase name="Get Endpoints Get" duration="44"/>
-  </file>
-  <file path="V:\Trabajos_JS\MyTest\src\tests\user.test.js">
-    <testCase name="Pruebas de registro de usuario Post" duration="2860"/>
-    <testCase name="Pruebas de registro de usuario Post" duration="189"/>
-    <testCase name="Pruebas de registro de usuario Post" duration="183"/>
+  <file path="V:\Trabajos_JS\MyTest\src\tests\auth.test.js">
+    <testCase name="Pruebas de inicio de sesión Post" duration="3711"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="195"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="250"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="3"/>
+    <testCase name="Pruebas de inicio de sesión Debería fallar el inicio de sesión si se proporciona un SQL Injection en el nombre de usuario" duration="3"/>
   </file>
 </testExecutions>

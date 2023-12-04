@@ -38,6 +38,6 @@ const ResultadoPrueba = db.define('resultado_prueba', {
     }
 )
 
-ResultadoPrueba.belongsTo(CasoPrueba,{foreignKey:'id'});
+ResultadoPrueba.belongsTo(CasoPrueba,{foreignKey:'caso_prueba_id'});
 
 module.exports = ResultadoPrueba
