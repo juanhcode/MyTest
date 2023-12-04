@@ -1,4 +1,4 @@
-const faker = require('faker');
+const { faker } = require('@faker-js/faker');
 const request = require('supertest');
 const server = require('../index');
 const app = request(server)
@@ -7,18 +7,19 @@ const app = request(server)
 describe('Test crear casos de prueba', () => {
     it('Post', async () => {
         const res = await app
-            .get('/v1/caso/')
+            .get('/v1/caso')
             .send({
-                nombre: faker.lorem.words(),
-                descripcion: faker.lorem.sentence(),
-                pasos_a_seguir: faker.lorem.lines(3),
-                prioridades: faker.random.arrayElement(['Alta', 'Media', 'Baja']),
-                fecha_inicio: faker.date.future().toISOString(),
-                fecha_limite: faker.date.future().toISOString(),
+                nombre: faker.word.words(),
+                descripcion: faker.word.words(),
+                pasos_a_seguir: faker.word.words(4),
+                prioridades: faker.helpers.arrayElements(['Alta', 'Media', 'Bajo']).toString(),
+                fecha_inicio: faker.date.recent().toISOString().split('T')[0],
+                fecha_limite: faker.date.future().toISOString().split('T')[0],
                 datos_de_prueba: faker.lorem.sentence(),
                 expectativas: faker.lorem.sentence(),
-                usuario_id: faker.random.number()
+                proyecto_id:2
             });
+            console.log(res);
         expect(res.statusCode).toEqual(201);
     })
 })

@@ -1,23 +1,34 @@
-const express = require('express');
-const app = express();
+const express =  require('express');
+const app =  express();
+const port = 3030
 const cors = require('cors');
-const morgan = require('morgan');
-const caso = require('./v1/caso.route');
+require('dotenv').config();
+
+const users = require('./v1/routes/user.route');
+const caso = require('./v1/routes/caso.route')
 
 
 app.use(express.json());
-app.use(cors());
-app.use(morgan("dev"));
+app.use(cors({
+  origin: 'https://proyecto-mytest.fly.dev'
+}));
 
-
-//Routes
-
+app.use('/v1/user',users);
 app.use('/v1/caso', caso);
 
-app.get('/', (req, res) => { return res.status(200).json({ nome: 'Learn SonarQube code coverage', status: true }); });
+app.get('/', (req, res) => {
+    return res.status(200).json({ 
+      nome:  'Learn SonarQube code coverage',
+      status: true 
+    });
+});
 
-const server = app.listen(process.env.PORT || 3000, () => {
-  console.log("Server running in port " + process.env.PORT || 3000);
-})
+let server = app.listen(port, () => {
+    console.log(`Application server running on ${port}`);
+});
 
-module.exports = server;
+module.exports  = server;
+
+
+
+

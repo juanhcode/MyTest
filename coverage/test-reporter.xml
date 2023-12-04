@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\index.test.js">
-    <testCase name="Get Endpoints Get" duration="79"/>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js">
+    <testCase name="Test crear casos de prueba Post" duration="2741">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 201
+Received: 404
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js:23:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
   </file>
 </testExecutions>
