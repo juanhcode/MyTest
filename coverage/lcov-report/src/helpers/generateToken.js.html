@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/controllers/user.controller.js</title>
+    <title>Code coverage report for src/helpers/generateToken.js</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../prettify.css" />
     <link rel="stylesheet" href="../../base.css" />
@@ -19,13 +19,13 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/controllers</a> user.controller.js</h1>
+        <h1><a href="../../index.html">All files</a> / <a href="index.html">src/helpers</a> generateToken.js</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/10</span>
+                <span class='fraction'>4/6</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">30% </span>
+                <span class="strong">66.66% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/10</span>
+                <span class='fraction'>4/6</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -84,20 +84,22 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a>
-<a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -105,27 +107,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const userServices = require('../services/user.service');
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const jwt = require('jsonwebtoken');
+require('dotenv').config();
 &nbsp;
-const creationUser = <span class="fstat-no" title="function not covered" >as</span>ync(req,res) =&gt; {
-    const {body} = <span class="cstat-no" title="statement not covered" >req;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >    try {</span>
-        const usuarioCreated = <span class="cstat-no" title="statement not covered" >await userServices.createUser(body)</span>
-<span class="cstat-no" title="statement not covered" >        console.log(res.status);</span>
-<span class="cstat-no" title="statement not covered" >        res.status(201).json({</span>
-            msg: `Usuario: ${usuarioCreated.nombre} ha sido creado correctamente`
-        })
-    } catch (error) {
-<span class="cstat-no" title="statement not covered" >        console.log(error);</span>
-<span class="cstat-no" title="statement not covered" >        res.status(500).json({</span>
-            msg: 'Error en el servidor, hable con el administrador'
-        })
-    }
+const tokenSign = <span class="fstat-no" title="function not covered" >as</span>ync (usuario)=&gt;{
+    const {id, nombre, correo, foto, rol} = <span class="cstat-no" title="statement not covered" >usuario;</span>
+<span class="cstat-no" title="statement not covered" >    return jwt.sign(</span>
+        {
+            id,
+            nombre,
+            correo,
+            foto,
+            rol
+        },
+        process.env.JWT_SECRET,
+        {
+            expiresIn:"6h"
+        }
+    );
 }
 &nbsp;
 module.exports = {
-    creationUser
+    tokenSign
 }</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->

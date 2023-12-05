@@ -31,6 +31,6 @@ const Informe = db.define('informe', {
     }
 )
 
-Informe.belongsTo(CasoPrueba,{foreignKey:'id'});
+Informe.belongsTo(CasoPrueba,{foreignKey:'caso_prueba_id'});
 
 module.exports = Informe

@@ -1,11 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="V:\Trabajos_JS\MyTest\src\tests\index.test.js">
-    <testCase name="Get Endpoints Get" duration="44"/>
+    <testCase name="Get Endpoints Get" duration="44">
+      <failure message="Error: listen EADDRINUSE: address already in use :::3030"><![CDATA[Error: listen EADDRINUSE: address already in use :::3030
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Function.listen (V:\Trabajos_JS\MyTest\node_modules\express\lib\application.js:635:24)
+    at Object.listen (V:\Trabajos_JS\MyTest\src\index.js:29:18)
+    at Runtime._execModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
+    at Runtime._loadModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
+    at Runtime.requireModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:882:12)
+    at Runtime.requireModuleOrMock (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:1048:21)
+    at Object.require (V:\Trabajos_JS\MyTest\src\tests\index.test.js:2:16)
+    at Runtime._execModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
+    at Runtime._loadModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
+    at Runtime.requireModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:882:12)
+    at jestAdapter (V:\Trabajos_JS\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at runTestInternal (V:\Trabajos_JS\MyTest\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (V:\Trabajos_JS\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (V:\Trabajos_JS\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
+  </file>
+  <file path="V:\Trabajos_JS\MyTest\src\tests\auth.test.js">
+    <testCase name="Pruebas de inicio de sesión Post" duration="107">
+      <failure message="Error: expect(received).toBe(expected) // Object.is equality"><![CDATA[Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 200
+Received: 500
+    at Object.toBe (V:\Trabajos_JS\MyTest\src\tests\auth.test.js:15:33)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Pruebas de inicio de sesión Post" duration="40">
+      <failure message="Error: expect(received).toBe(expected) // Object.is equality"><![CDATA[Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 404
+Received: 500
+    at Object.toBe (V:\Trabajos_JS\MyTest\src\tests\auth.test.js:25:33)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Pruebas de inicio de sesión Post" duration="35">
+      <failure message="Error: expect(received).toBe(expected) // Object.is equality"><![CDATA[Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 401
+Received: 500
+    at Object.toBe (V:\Trabajos_JS\MyTest\src\tests\auth.test.js:35:33)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Pruebas de inicio de sesión Post" duration="3"/>
+    <testCase name="Pruebas de inicio de sesión Debería fallar el inicio de sesión si se proporciona un SQL Injection en el nombre de usuario" duration="3"/>
   </file>
   <file path="V:\Trabajos_JS\MyTest\src\tests\user.test.js">
-    <testCase name="Pruebas de registro de usuario Post" duration="2860"/>
-    <testCase name="Pruebas de registro de usuario Post" duration="189"/>
-    <testCase name="Pruebas de registro de usuario Post" duration="183"/>
+    <testCase name="Pruebas de registro de usuario Post" duration="95">
+      <failure message="Error: listen EADDRINUSE: address already in use :::3030"><![CDATA[Error: listen EADDRINUSE: address already in use :::3030
+    at Server.setupListenHandle [as _listen2] (node:net:1372:16)
+    at listenInCluster (node:net:1420:12)
+    at Server.listen (node:net:1508:7)
+    at Function.listen (V:\Trabajos_JS\MyTest\node_modules\express\lib\application.js:635:24)
+    at Object.listen (V:\Trabajos_JS\MyTest\src\index.js:29:18)
+    at Runtime._execModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
+    at Runtime._loadModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
+    at Runtime.requireModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:882:12)
+    at Runtime.requireModuleOrMock (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:1048:21)
+    at Object.require (V:\Trabajos_JS\MyTest\src\tests\user.test.js:2:16)
+    at Runtime._execModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
+    at Runtime._loadModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
+    at Runtime.requireModule (V:\Trabajos_JS\MyTest\node_modules\jest-runtime\build\index.js:882:12)
+    at jestAdapter (V:\Trabajos_JS\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at runTestInternal (V:\Trabajos_JS\MyTest\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (V:\Trabajos_JS\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (V:\Trabajos_JS\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 201
+Received: 400
+    at Object.toEqual (V:\Trabajos_JS\MyTest\src\tests\user.test.js:15:35)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Pruebas de registro de usuario Post" duration="148">
+      <failure message="Error: expect(received).toBe(expected) // Object.is equality"><![CDATA[Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: "El correo usuario10@gmail.com ya esta registrado"
+Received: "la autentificaci�n password fall� para el usuario �cifu1�"
+    at Object.toBe (V:\Trabajos_JS\MyTest\src\tests\user.test.js:29:44)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)]]></failure>
+    </testCase>
+    <testCase name="Pruebas de registro de usuario Post" duration="31"/>
   </file>
 </testExecutions>
