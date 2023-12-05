@@ -1,21 +1,22 @@
 const request = require('supertest');
+const { faker } = require('@faker-js/faker');
 const server = require('../index');
 const app = request(server);
 require('dotenv').config();
 
 describe('Pruebas de registro de usuario', () => {
+
     it('Post', async () => {
       const response = await app
       .post('/v1/user')
       .send({
-        nombre: "usuario9",
-        correo: "usuario9@gmail.com",
-        contrasenia: "123456"
+        nombre: faker.person.firstName(),
+        correo: faker.internet.email(),
+        contrasenia: faker.internet.password(),
       })
       expect(response.statusCode).toEqual(201);
-      expect(response.body.msg).toBe("Usuario: usuario9 ha sido creado correctamente")
+      expect(response.body.msg).toBe(`Usuario: ${response.body.msg.split(' ')[1]} ha sido creado correctamente`)
     })
-  
     it('Post', async () => {
       const response = await app
       .post('/v1/user')
