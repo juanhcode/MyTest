@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "node src/server.js",
     "test:dev": "jest --coverage",
-    "dev": "nodemon index.js",
+    "dev": "nodemon src/index.js",
     "test": "jest"
   },
   "jest": {
@@ -14,7 +14,10 @@
     "coveragePathIgnorePatterns": [
       "/node_modules/"
     ],
-    "testResultsProcessor": "jest-sonar-reporter"
+    "testResultsProcessor": "jest-sonar-reporter",
+    "modulePaths": [
+      "<rootDir>/node_modules"
+    ]
   },
   "jestSonar": {
     "reportPath": "coverage",
@@ -41,7 +44,9 @@
     "supertest": "^6.3.3"
   },
   "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
     "@flydotio/dockerfile": "^0.4.11",
+    "faker": "^6.6.6",
     "jest-sonar-reporter": "^2.0.0"
   }
 }
