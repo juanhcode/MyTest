@@ -29,7 +29,7 @@ const PermisoUsuario = db.define('permiso_usuario', {
     }
 )
 
-PermisoUsuario.belongsTo(Usuario,{foreignKey: 'id'});
-PermisoUsuario.belongsTo(Permiso,{foreignKey: 'id'})
+PermisoUsuario.belongsTo(Usuario,{foreignKey: 'usuario_id'});
+PermisoUsuario.belongsTo(Permiso,{foreignKey: 'permiso_id'})
 
 module.exports = PermisoUsuario

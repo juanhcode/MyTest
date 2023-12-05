@@ -21,13 +21,13 @@ describe('Pruebas de registro de usuario', () => {
       const response = await app
       .post('/v1/user')
       .send({
-        nombre: "usuario9",
-        correo: "usuario9@gmail.com",
+        nombre: "usuario10",
+        correo: "usuario10@gmail.com",
         contrasenia: "123456"
       })
       const parsedResponse = JSON.parse(response.text);
       expect(response.status).toBe(400);
-      expect(parsedResponse.errors[0].msg).toBe('El correo usuario9@gmail.com ya esta registrado')
+      expect(parsedResponse.errors[0].msg).toBe('El correo usuario10@gmail.com ya esta registrado')
     })
   
     it('Post', async () => {

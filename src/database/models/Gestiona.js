@@ -29,7 +29,7 @@ const Gestiona = db.define('gestiona', {
     }
 )
 
-Gestiona.belongsTo(Usuario,{foreignKey: 'id'});
-Gestiona.belongsTo(Proyecto,{foreignKey:'id'});
+Gestiona.belongsTo(Usuario,{foreignKey:'usuario_id'});
+Gestiona.belongsTo(Proyecto,{foreignKey:'proyecto_id'});
 
 module.exports = Gestiona

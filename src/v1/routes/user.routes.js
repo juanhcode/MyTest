@@ -1,5 +1,4 @@
 const {Router} = require('express');
-const router = new Router();
 //Paquete para validar el email enviado en el body
 const { check } = require("express-validator");
 
@@ -10,6 +9,8 @@ const {
 const {
     validateFields
 } = require('../../middlewares/validate-fields')
+
+const router = new Router();
 
 const userController = require('../../controllers/user.controller');
 

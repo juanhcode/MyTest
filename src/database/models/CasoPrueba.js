@@ -37,6 +37,7 @@ const CasoPrueba = db.define('caso_de_prueba', {
     },
     proyecto_id: {
         type: DataTypes.INTEGER,
+        allowNull: false,
         references: {
             model: Proyecto,
             key: 'id'
@@ -49,6 +50,6 @@ const CasoPrueba = db.define('caso_de_prueba', {
     }
 )
 
-CasoPrueba.belongsTo(Proyecto, {foreignKey:'id'});
+CasoPrueba.belongsTo(Proyecto, {foreignKey:'proyecto_id'});
 
 module.exports = CasoPrueba

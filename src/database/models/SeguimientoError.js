@@ -30,6 +30,6 @@ const SeguimientoError = db.define('seguimiendo_de_error', {
     }
 )
 
-SeguimientoError.belongsTo(CasoPrueba,{foreignKey:'id'});
+SeguimientoError.belongsTo(CasoPrueba,{foreignKey:'caso_prueba_id'});
 
 module.exports = SeguimientoError
