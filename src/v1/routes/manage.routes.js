@@ -10,7 +10,7 @@ const {
     userByIDExistsMiddleware
 } = require('../../helpers/db-validators')
 
-router.get('/usersByProject', [
+router.get('', [
     checkAuth
 ], manageController.getUserXProject);
 

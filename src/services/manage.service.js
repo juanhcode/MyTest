@@ -14,7 +14,6 @@ const getUserXProject = async () => {
 
 const createManage = async (newManage) => {
     const manageCreation = new Gestiona(newManage)
-    console.log(manageCreation);
     await manageCreation.save();
     return manageCreation
 }

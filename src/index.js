@@ -2,22 +2,30 @@ const express =  require('express');
 const app =  express();
 const port = 3030
 const cors = require('cors');
+const fileUpload = require('express-fileupload');
 require('dotenv').config();
 
 const auth = require('./v1/routes/auth.routes')
 const users = require('./v1/routes/user.routes');
 const projects = require('./v1/routes/project.routes')
 const manageRelations = require('./v1/routes/manage.routes')
+const testResults = require('./v1/routes/testResult.routes')
+const uploadImage = require('./v1/routes/image.routes')
 
 app.use(express.json());
-app.use(cors({
-  origin: 'https://proyecto-mytest.fly.dev'
+app.use(cors());
+app.use(fileUpload({
+  useTempFiles:true,
+  tempFileDir: '/tmp/',
+  createParentPath: true
 }));
 
 app.use('/v1/login', auth)
 app.use('/v1/user',users)
 app.use('/v1/project',projects)
 app.use('/v1/manage',manageRelations)
+app.use('/v1/testResult',testResults)
+app.use('/v1/uploadFile',uploadImage)
 
 app.get('/', (req, res) => {
     return res.status(200).json({ 
