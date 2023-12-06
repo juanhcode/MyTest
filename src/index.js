@@ -1,12 +1,14 @@
 const express =  require('express');
 const app =  express();
-const port = 3030
+const port = 4030
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
 require('dotenv').config();
 
-const auth = require('./v1/routes/auth.routes')
+
 const users = require('./v1/routes/user.routes');
+const caso = require('./v1/routes/caso.route')
+const auth = require('./v1/routes/auth.routes')
 const projects = require('./v1/routes/project.routes')
 const manageRelations = require('./v1/routes/manage.routes')
 const testResults = require('./v1/routes/testResult.routes')
@@ -26,6 +28,7 @@ app.use('/v1/project',projects)
 app.use('/v1/manage',manageRelations)
 app.use('/v1/testResult',testResults)
 app.use('/v1/uploadFile',uploadImage)
+app.use('/v1/caso', caso);
 
 app.get('/', (req, res) => {
     return res.status(200).json({ 
@@ -39,3 +42,7 @@ let server = app.listen(port, () => {
 });
 
 module.exports  = server;
+
+
+
+
