@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\index.test.js">
-    <testCase name="Get Endpoints Get" duration="88">
-      <failure message="Error: listen EADDRINUSE: address already in use :::4030"><![CDATA[Error: listen EADDRINUSE: address already in use :::4030
+    <testCase name="Get Endpoints Get" duration="225">
+      <failure message="Error: listen EADDRINUSE: address already in use :::3030"><![CDATA[Error: listen EADDRINUSE: address already in use :::3030
     at Server.setupListenHandle [as _listen2] (node:net:1733:16)
     at listenInCluster (node:net:1781:12)
     at Server.listen (node:net:1869:7)
@@ -24,15 +24,15 @@
     </testCase>
   </file>
   <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\auth.test.js">
-    <testCase name="Pruebas de inicio de sesión Post" duration="2652"/>
-    <testCase name="Pruebas de inicio de sesión Post" duration="182"/>
-    <testCase name="Pruebas de inicio de sesión Post" duration="288"/>
-    <testCase name="Pruebas de inicio de sesión Post" duration="5"/>
-    <testCase name="Pruebas de inicio de sesión Debería fallar el inicio de sesión si se proporciona un SQL Injection en el nombre de usuario" duration="5"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="2759"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="190"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="280"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="8"/>
+    <testCase name="Pruebas de inicio de sesión Debería fallar el inicio de sesión si se proporciona un SQL Injection en el nombre de usuario" duration="7"/>
   </file>
   <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\user.test.js">
-    <testCase name="Pruebas de registro de usuario Post" duration="2730">
-      <failure message="Error: listen EADDRINUSE: address already in use :::4030"><![CDATA[Error: listen EADDRINUSE: address already in use :::4030
+    <testCase name="Pruebas de registro de usuario Post" duration="2259">
+      <failure message="Error: listen EADDRINUSE: address already in use :::3030"><![CDATA[Error: listen EADDRINUSE: address already in use :::3030
     at Server.setupListenHandle [as _listen2] (node:net:1733:16)
     at listenInCluster (node:net:1781:12)
     at Server.listen (node:net:1869:7)
@@ -51,13 +51,19 @@
     at runTestInternal (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:367:16)
     at runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
     at Object.worker (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 201
+Received: 400
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\user.test.js:17:35)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
     </testCase>
-    <testCase name="Pruebas de registro de usuario Post" duration="176"/>
-    <testCase name="Pruebas de registro de usuario Post" duration="176"/>
+    <testCase name="Pruebas de registro de usuario Post" duration="1071"/>
+    <testCase name="Pruebas de registro de usuario Post" duration="181"/>
   </file>
   <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js">
-    <testCase name="Test crear casos de prueba Post - Caso exitoso" duration="2513">
-      <failure message="Error: listen EADDRINUSE: address already in use :::4030"><![CDATA[Error: listen EADDRINUSE: address already in use :::4030
+    <testCase name="Test crear casos de prueba Post - Caso exitoso" duration="2626">
+      <failure message="Error: listen EADDRINUSE: address already in use :::3030"><![CDATA[Error: listen EADDRINUSE: address already in use :::3030
     at Server.setupListenHandle [as _listen2] (node:net:1733:16)
     at listenInCluster (node:net:1781:12)
     at Server.listen (node:net:1869:7)
@@ -77,12 +83,121 @@
     at runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
     at Object.worker (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
     </testCase>
-    <testCase name="Test eliminar casos de prueba Delete - Caso exitoso" duration="360"/>
-    <testCase name="Test eliminar casos de prueba Delete - Intentar eliminar un caso inexistente" duration="179"/>
-    <testCase name="Test actualizar casos de prueba PUT - Caso exitoso" duration="358"/>
-    <testCase name="Test actualizar casos de prueba PUT - Intentar actualizar un caso inexistente" duration="178"/>
-    <testCase name="Test obtener casos de prueba GET - Caso exitoso" duration="178"/>
-    <testCase name="Test obtener casos de prueba GET - Intentar obtener casos de un proyecto que no existe" duration="180"/>
-    <testCase name="Test obtener casos de prueba GET - Entrada incorrecta" duration="225"/>
+    <testCase name="Test eliminar casos de prueba Delete - Caso exitoso" duration="359"/>
+    <testCase name="Test eliminar casos de prueba Delete - Intentar eliminar un caso inexistente" duration="178"/>
+    <testCase name="Test actualizar casos de prueba PUT - Caso exitoso" duration="354"/>
+    <testCase name="Test actualizar casos de prueba PUT - Intentar actualizar un caso inexistente" duration="179"/>
+    <testCase name="Test obtener casos de prueba GET - Caso exitoso" duration="179"/>
+    <testCase name="Test obtener casos de prueba GET - Intentar obtener casos de un proyecto que no existe" duration="179"/>
+    <testCase name="Test obtener casos de prueba GET - Entrada incorrecta" duration="238"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js">
+    <testCase name="Test crear seguimientos de errores Post - Seguimiento exitoso" duration="815">
+      <failure message="Error: listen EADDRINUSE: address already in use :::3030"><![CDATA[Error: listen EADDRINUSE: address already in use :::3030
+    at Server.setupListenHandle [as _listen2] (node:net:1733:16)
+    at listenInCluster (node:net:1781:12)
+    at Server.listen (node:net:1869:7)
+    at Function.listen (C:\Users\Usuario\Desktop\MyTest\node_modules\express\lib\application.js:635:24)
+    at Object.listen (C:\Users\Usuario\Desktop\MyTest\src\index.js:33:18)
+    at Runtime._execModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
+    at Runtime._loadModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
+    at Runtime.requireModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:882:12)
+    at Runtime.requireModuleOrMock (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1048:21)
+    at Object.require (C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js:3:16)
+    at Runtime._execModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
+    at Runtime._loadModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
+    at Runtime.requireModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:882:12)
+    at jestAdapter (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runTestInternal (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 201
+Received: 500
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js:16:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test eliminar seguimiento Post - Seguimiento exitoso" duration="0">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;id&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'id')
+    at Object.id (C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js:41:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test eliminar seguimiento Delete - seguimiento exitoso" duration="0">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;id&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'id')
+    at Object.id (C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js:41:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test eliminar seguimiento Delete - Intentar eliminar un seguimiento inexistente" duration="0">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;id&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'id')
+    at Object.id (C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js:41:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test actualizar seguimientos Post - Seguimiento exitoso" duration="0">
+      <failure message="TypeError: Cannot destructure property &apos;id&apos; of &apos;caso&apos; as it is undefined."><![CDATA[TypeError: Cannot destructure property 'id' of 'caso' as it is undefined.
+    at Object.id (C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js:94:16)
+    at Promise.then.completed (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
+    <testCase name="Test actualizar seguimientos PUT - Seguimiento exitoso" duration="1">
+      <failure message="TypeError: Cannot set properties of undefined (setting &apos;error_priorizado&apos;)"><![CDATA[TypeError: Cannot set properties of undefined (setting 'error_priorizado')
+    at Object.<anonymous> (C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js:108:37)
+    at Promise.then.completed (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\utils.js:298:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\utils.js:231:10)
+    at _callCircusTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\run.js:316:40)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at _runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\run.js:252:3)
+    at _runTestsForDescribeBlock (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\run.js:126:9)
+    at _runTestsForDescribeBlock (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\run.js:121:9)
+    at run (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\run.js:71:3)
+    at runAndTransformResultsToJestFormat (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapterInit.js:122:21)
+    at jestAdapter (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:79:19)
+    at runTestInternal (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
+    <testCase name="Test actualizar seguimientos PUT - Intentar actualizar un caso inexistente" duration="5005">
+      <failure message="SequelizeConnectionError: too many connections for role &quot;uxz3ga7q1xy8mhgqwrh1&quot;"><![CDATA[SequelizeConnectionError: too many connections for role "uxz3ga7q1xy8mhgqwrh1"
+    at Client._connectionCallback (C:\Users\Usuario\Desktop\MyTest\node_modules\sequelize\src\dialects\postgres\connection-manager.js:191:24)
+    at Client._handleErrorWhileConnecting (C:\Users\Usuario\Desktop\MyTest\node_modules\pg\lib\client.js:327:19)
+    at Client._handleErrorMessage (C:\Users\Usuario\Desktop\MyTest\node_modules\pg\lib\client.js:347:19)
+    at Connection.emit (node:events:513:28)
+    at C:\Users\Usuario\Desktop\MyTest\node_modules\pg\lib\connection.js:117:12
+    at Parser.parse (C:\Users\Usuario\Desktop\MyTest\node_modules\pg-protocol\src\parser.ts:104:9)
+    at Socket.<anonymous> (C:\Users\Usuario\Desktop\MyTest\node_modules\pg-protocol\src\index.ts:7:48)
+    at Socket.emit (node:events:513:28)
+    at addChunk (node:internal/streams/readable:324:12)
+    at readableAddChunk (node:internal/streams/readable:297:9)
+    at Socket.Readable.push (node:internal/streams/readable:234:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)]]></failure>
+      <failure message="Error: thrown: &quot;Exceeded timeout of 5000 ms for a test."><![CDATA[Error: thrown: "Exceeded timeout of 5000 ms for a test.
+Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+    at it (C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js:114:5)
+    at _dispatchDescribe (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\index.js:91:26)
+    at describe (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\index.js:55:5)
+    at Object.describe (C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js:72:1)
+    at Runtime._execModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
+    at Runtime._loadModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
+    at Runtime.requireModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:882:12)
+    at jestAdapter (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at runTestInternal (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:367:16)
+    at runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
+    at Object.worker (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
+    </testCase>
   </file>
 </testExecutions>

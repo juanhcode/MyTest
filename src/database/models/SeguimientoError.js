@@ -2,7 +2,7 @@ const { DataTypes } = require('sequelize');
 const db = require('../connection');
 const CasoPrueba = require('./CasoPrueba');
 
-const SeguimientoError = db.define('seguimiendo_de_error', {
+const SeguimientoError = db.define('seguimiento_de_error', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -16,7 +16,7 @@ const SeguimientoError = db.define('seguimiendo_de_error', {
         type: DataTypes.STRING,
         allowNull: false
     },
-    caso_prueba_id: {
+    caso_de_prueba_id: {
         type: DataTypes.INTEGER,
         references: {
             model: CasoPrueba,
@@ -30,6 +30,6 @@ const SeguimientoError = db.define('seguimiendo_de_error', {
     }
 )
 
-SeguimientoError.belongsTo(CasoPrueba,{foreignKey:'caso_prueba_id'});
+SeguimientoError.belongsTo(CasoPrueba,{foreignKey:'caso_de_prueba_id'});
 
 module.exports = SeguimientoError
