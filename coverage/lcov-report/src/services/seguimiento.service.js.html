@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">52.94% </span>
+                <span class="strong">88.23% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>9/17</span>
+                <span class='fraction'>15/17</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">40% </span>
+                <span class="strong">80% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/5</span>
+                <span class='fraction'>4/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">52.94% </span>
+                <span class="strong">88.23% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/17</span>
+                <span class='fraction'>15/17</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -110,32 +110,32 @@
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">5x</span>
@@ -156,31 +156,31 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const seguimientoError = require('../database/models/SeguimientoError');
 const crearSeguimiento = async (nuevoSeguimiento)=&gt;{
     const seguimientoCreado = await seguimientoError.create(nuevoSeguimiento);
-<span class="cstat-no" title="statement not covered" >    return seguimientoCreado;</span>
+    return seguimientoCreado;
 }
 &nbsp;
-const deleteSeguimiento = <span class="fstat-no" title="function not covered" >as</span>ync(seguimientoId)=&gt;{
-    const seguimientoDeleted = <span class="cstat-no" title="statement not covered" >await seguimientoError.destroy({</span>
+const deleteSeguimiento = async(seguimientoId)=&gt;{
+    const seguimientoDeleted = await seguimientoError.destroy({
         where:{
             id:seguimientoId
         }
     });
-<span class="cstat-no" title="statement not covered" >    return seguimientoDeleted;</span>
+    return seguimientoDeleted;
 }
 &nbsp;
 const validationSeguimientoExistsById = async (id) =&gt; {
     const seguimiento = await seguimientoError.findByPk(id);
-<span class="cstat-no" title="statement not covered" >    return seguimiento;</span>
+    return seguimiento;
 }
 &nbsp;
 &nbsp;
-const updateSeguimiento = <span class="fstat-no" title="function not covered" >as</span>ync(id,seguimiento)=&gt;{
-    const seguimientoUpdated = <span class="cstat-no" title="statement not covered" >await seguimientoError.update(seguimiento,{</span>
+const updateSeguimiento = async(id,seguimiento)=&gt;{
+    const seguimientoUpdated = await seguimientoError.update(seguimiento,{
         where:{
             id,
         }
     })
-<span class="cstat-no" title="statement not covered" >    return seguimientoUpdated;</span>
+    return seguimientoUpdated;
 }
 &nbsp;
 const getAllSeguimientosByCaso = <span class="fstat-no" title="function not covered" >as</span>ync(idCaso)=&gt;{
@@ -205,7 +205,7 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-12-07T06:03:12.660Z
+                at 2023-12-09T17:32:10.192Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
