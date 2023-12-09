@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">37.5% </span>
+                <span class="strong">75% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>3/8</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>0/4</span>
+                <span class='fraction'>6/8</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">50% </span>
-                <span class="quiet">Functions</span>
-                <span class='fraction'>1/2</span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>2/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">37.5% </span>
+                <span class="strong">100% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>2/2</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">75% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>3/8</span>
+                <span class='fraction'>6/8</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -84,42 +84,51 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<<<<<<< HEAD
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">35x</span>
+=======
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">99x</span>
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">13x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<<<<<<< HEAD
 <span class="cline-any cline-yes">7x</span></td><td class="text"><pre class="prettyprint lang-js">//Obteniendo los roles que llegan desde el archivo /routes/user.js
+=======
+<span class="cline-any cline-yes">9x</span></td><td class="text"><pre class="prettyprint lang-js">//Obteniendo los roles que llegan desde el archivo /routes/user.js
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
 const hasRol = (...rols) =&gt; {
-    return <span class="fstat-no" title="function not covered" >(r</span>eq, res, next) =&gt; {
+    return (req, res, next) =&gt; {
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (!req.usuario) {</span>
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (!req.usuario) {
 <span class="cstat-no" title="statement not covered" >            return res.status(500).json({</span>
                 msg: 'Se quiere verificar el rol sin validar el token primero'
             })
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (!rols.includes(req.usuario.rol)) {</span>
+        <span class="missing-if-branch" title="if path not taken" >I</span>if (!rols.includes(req.usuario.rol)) {
 <span class="cstat-no" title="statement not covered" >            return res.status(401).json({</span>
                 msg: `El servicio requiere uno de estos roles: ${rols}`
             })
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        next();</span>
+        next();
     }
 }
 &nbsp;
@@ -130,7 +139,11 @@ module.exports = hasRol</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+<<<<<<< HEAD
                 at 2023-12-09T23:29:31.051Z
+=======
+                at 2023-12-09T17:17:48.490Z
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
             </div>
         <script src="../../prettify.js"></script>
         <script>

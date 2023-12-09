@@ -1,5 +1,6 @@
 const { DataTypes } = require('sequelize');
 const db = require('../connection');
+const CasoPrueba = require('./CasoPrueba');
 
 const Informe = db.define('informe', {
     id: {
@@ -17,7 +18,7 @@ const Informe = db.define('informe', {
     cobertura_de_pruebas: {
         type: DataTypes.STRING
     },
-    caso_prueba_id: {
+    caso_de_prueba_id: {
         type: DataTypes.INTEGER,
         references: {
             model: CasoPrueba,
@@ -31,6 +32,6 @@ const Informe = db.define('informe', {
     }
 )
 
-Informe.belongsTo(CasoPrueba,{foreignKey:'caso_prueba_id'});
+Informe.belongsTo(CasoPrueba,{foreignKey:'caso_de_prueba_id'});
 
 module.exports = Informe

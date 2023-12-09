@@ -10,9 +10,15 @@ const {
     userByIDExistsMiddleware
 } = require('../../helpers/db-validators')
 
-router.get('/usersByProject', [
+router.get('', [
     checkAuth
 ], manageController.getUserXProject);
+
+router.get('/:id', [
+    checkAuth,
+    check('id').custom(userByIDExistsMiddleware),
+    validateFields
+], manageController.getProjectsByUser);
 
 router.post('', [
     checkAuth,

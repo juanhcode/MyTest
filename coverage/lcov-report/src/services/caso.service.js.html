@@ -23,9 +23,15 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
+<<<<<<< HEAD
                 <span class="strong">52.94% </span>
                 <span class="quiet">Statements</span>
                 <span class='fraction'>9/17</span>
+=======
+                <span class="strong">58.82% </span>
+                <span class="quiet">Statements</span>
+                <span class='fraction'>10/17</span>
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
             </div>
         
             
@@ -37,16 +43,28 @@
         
             
             <div class='fl pad1y space-right2'>
+<<<<<<< HEAD
                 <span class="strong">20% </span>
                 <span class="quiet">Functions</span>
                 <span class='fraction'>1/5</span>
+=======
+                <span class="strong">60% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>3/5</span>
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
             </div>
         
             
             <div class='fl pad1y space-right2'>
+<<<<<<< HEAD
                 <span class="strong">52.94% </span>
                 <span class="quiet">Lines</span>
                 <span class='fraction'>9/17</span>
+=======
+                <span class="strong">58.82% </span>
+                <span class="quiet">Lines</span>
+                <span class='fraction'>10/17</span>
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
             </div>
         
             
@@ -107,6 +125,7 @@
 <a name='L42'></a><a href='#L42'>42</a>
 <a name='L43'></a><a href='#L43'>43</a>
 <a name='L44'></a><a href='#L44'>44</a>
+<<<<<<< HEAD
 <a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">5x</span>
@@ -138,6 +157,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-no">&nbsp;</span>
+=======
+<a name='L45'></a><a href='#L45'>45</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -145,7 +173,35 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">3x</span>
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<<<<<<< HEAD
 <span class="cline-any cline-yes">7x</span>
+=======
+<span class="cline-any cline-yes">9x</span>
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -154,7 +210,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const Caso = require('../database/models/CasoPrueba');
 const crearCaso = async (nuevoCaso)=&gt;{
     const casoCreado = await Caso.create(nuevoCaso);
-    return casoCreado;
+<span class="cstat-no" title="statement not covered" >    return casoCreado;</span>
 }
 &nbsp;
 const deleteCaso = <span class="fstat-no" title="function not covered" >as</span>ync(casoId)=&gt;{
@@ -175,8 +231,13 @@ const updateCaso = <span class="fstat-no" title="function not covered" >as</span
 <span class="cstat-no" title="statement not covered" >    return casoUpdated;</span>
 }
 &nbsp;
+<<<<<<< HEAD
 const validationCasoExistsById = <span class="fstat-no" title="function not covered" >as</span>ync (id) =&gt; {
     const caso = <span class="cstat-no" title="statement not covered" >await Caso.findByPk(id);</span>
+=======
+const validationCasoExistsById = async (id) =&gt; {
+    const caso = await Caso.findByPk(id);
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
 <span class="cstat-no" title="statement not covered" >    return caso;</span>
 }
 &nbsp;
@@ -202,7 +263,11 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+<<<<<<< HEAD
                 at 2023-12-09T23:29:31.051Z
+=======
+                at 2023-12-09T17:17:48.490Z
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
             </div>
         <script src="../../prettify.js"></script>
         <script>

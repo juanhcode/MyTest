@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+<<<<<<< HEAD
   <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\index.test.js">
     <testCase name="Get Endpoints Get" duration="402"/>
   </file>
@@ -112,5 +113,14 @@ Received: 403
     at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js:136:32)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
     </testCase>
+=======
+  <file path="V:\Trabajos_JS\MyTest\src\tests\testResult.test.js">
+    <testCase name="Test crear resultado de prueba Post - Caso exitoso" duration="2868"/>
+    <testCase name="Project resultado de prueba GET - Caso exitoso" duration="380"/>
+    <testCase name="Test actualizar resultado de prueba PUT - Caso exitoso" duration="743"/>
+    <testCase name="Test actualizar resultado de prueba PUT - Intentar actualizar un resultado de prueba inexistente" duration="373"/>
+    <testCase name="Test eliminar resultado de prueba Delete - Caso exitoso" duration="557"/>
+    <testCase name="Test eliminar resultado de prueba Delete - Intentar eliminar un resultado de prueba inexistente" duration="372"/>
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
   </file>
 </testExecutions>

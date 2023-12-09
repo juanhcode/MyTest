@@ -69,7 +69,7 @@ CREATE TABLE RESULTADO_PRUEBA(
 	Casos_no_ejecutados VARCHAR(128),
 	Fallos VARCHAR(128),
 	Exitos VARCHAR(128),
-	Captura_de_pantalla VARCHAR(512),
+	Foto VARCHAR(512),
 	Registros VARCHAR(256),
 	Caso_de_prueba_ID INT,
 	FOREIGN KEY (Caso_de_prueba_ID) REFERENCES CASO_DE_PRUEBA(ID)

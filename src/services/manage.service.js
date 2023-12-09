@@ -12,9 +12,18 @@ const getUserXProject = async () => {
     return userXproject;
 }
 
+const getProjectsByUserID = async (id) => {
+    const projectsByUser = await Gestiona.findAll({
+        include: Proyecto,
+        where: {
+            usuario_id: id
+        }
+    })
+    return projectsByUser;
+}
+
 const createManage = async (newManage) => {
     const manageCreation = new Gestiona(newManage)
-    console.log(manageCreation);
     await manageCreation.save();
     return manageCreation
 }
@@ -31,6 +40,7 @@ const deleteManage = async (user_id, project_id) => {
 
 module.exports = {
     getUserXProject,
+    getProjectsByUserID,
     createManage,
     deleteManage
 }

@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/15</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">46.66% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/15</span>
+                <span class='fraction'>14/14</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -97,6 +97,7 @@
 <a name='L32'></a><a href='#L32'>32</a>
 <a name='L33'></a><a href='#L33'>33</a>
 <a name='L34'></a><a href='#L34'>34</a>
+<<<<<<< HEAD
 <a name='L35'></a><a href='#L35'>35</a>
 <a name='L36'></a><a href='#L36'>36</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-yes">7x</span>
@@ -104,14 +105,23 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-no">&nbsp;</span>
+=======
+<a name='L35'></a><a href='#L35'>35</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<<<<<<< HEAD
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -121,15 +131,29 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-no">&nbsp;</span>
+=======
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">1x</span>
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<<<<<<< HEAD
 <span class="cline-any cline-yes">7x</span>
+=======
+<span class="cline-any cline-yes">9x</span>
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -137,31 +161,30 @@
 const Proyecto = require('../database/models/Proyecto')
 const Usuario = require('../database/models/Usuario')
 &nbsp;
-const getUserXProject = <span class="fstat-no" title="function not covered" >as</span>ync () =&gt; {
-    const userXproject = <span class="cstat-no" title="statement not covered" >await Gestiona.findAll({</span>
+const getUserXProject = async () =&gt; {
+    const userXproject = await Gestiona.findAll({
         include: [
             {model: Usuario},
             {model: Proyecto}
         ]
     })
-<span class="cstat-no" title="statement not covered" >    return userXproject;</span>
+    return userXproject;
 }
 &nbsp;
-const createManage = <span class="fstat-no" title="function not covered" >as</span>ync (newManage) =&gt; {
-    const manageCreation = <span class="cstat-no" title="statement not covered" >new Gestiona(newManage)</span>
-<span class="cstat-no" title="statement not covered" >    console.log(manageCreation);</span>
-<span class="cstat-no" title="statement not covered" >    await manageCreation.save();</span>
-<span class="cstat-no" title="statement not covered" >    return manageCreation</span>
+const createManage = async (newManage) =&gt; {
+    const manageCreation = new Gestiona(newManage)
+    await manageCreation.save();
+    return manageCreation
 }
 &nbsp;
-const deleteManage = <span class="fstat-no" title="function not covered" >as</span>ync (user_id, project_id) =&gt; {
-    const manageDeleted = <span class="cstat-no" title="statement not covered" >await Gestiona.destroy({</span>
+const deleteManage = async (user_id, project_id) =&gt; {
+    const manageDeleted = await Gestiona.destroy({
         where: {
             usuario_id: user_id,
             proyecto_id: project_id
         }
     })
-<span class="cstat-no" title="statement not covered" >    return manageDeleted;</span>
+    return manageDeleted;
 }
 &nbsp;
 module.exports = {
@@ -175,7 +198,11 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+<<<<<<< HEAD
                 at 2023-12-09T23:29:31.051Z
+=======
+                at 2023-12-09T17:17:48.490Z
+>>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
             </div>
         <script src="../../prettify.js"></script>
         <script>

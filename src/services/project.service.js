@@ -1,7 +1,7 @@
 const Proyecto = require('../database/models/Proyecto');
 
 const getWithPagination =  async (options)=> {
-    const { count, rows } = await Proyecto.findAndCountAll({ options});
+    const { count, rows } = await Proyecto.findAndCountAll({options});
     return {count, rows};
 }
 
