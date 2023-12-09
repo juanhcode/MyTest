@@ -1,88 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\index.test.js">
-    <testCase name="Get Endpoints Get" duration="88">
-      <failure message="Error: listen EADDRINUSE: address already in use :::4030"><![CDATA[Error: listen EADDRINUSE: address already in use :::4030
-    at Server.setupListenHandle [as _listen2] (node:net:1733:16)
-    at listenInCluster (node:net:1781:12)
-    at Server.listen (node:net:1869:7)
-    at Function.listen (C:\Users\Usuario\Desktop\MyTest\node_modules\express\lib\application.js:635:24)
-    at Object.listen (C:\Users\Usuario\Desktop\MyTest\src\index.js:33:18)
-    at Runtime._execModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:882:12)
-    at Runtime.requireModuleOrMock (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1048:21)
-    at Object.require (C:\Users\Usuario\Desktop\MyTest\src\tests\index.test.js:2:16)
-    at Runtime._execModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
-    at Object.worker (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
-    </testCase>
-  </file>
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\auth.test.js">
-    <testCase name="Pruebas de inicio de sesión Post" duration="2652"/>
-    <testCase name="Pruebas de inicio de sesión Post" duration="182"/>
-    <testCase name="Pruebas de inicio de sesión Post" duration="288"/>
-    <testCase name="Pruebas de inicio de sesión Post" duration="5"/>
-    <testCase name="Pruebas de inicio de sesión Debería fallar el inicio de sesión si se proporciona un SQL Injection en el nombre de usuario" duration="5"/>
-  </file>
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\user.test.js">
-    <testCase name="Pruebas de registro de usuario Post" duration="2730">
-      <failure message="Error: listen EADDRINUSE: address already in use :::4030"><![CDATA[Error: listen EADDRINUSE: address already in use :::4030
-    at Server.setupListenHandle [as _listen2] (node:net:1733:16)
-    at listenInCluster (node:net:1781:12)
-    at Server.listen (node:net:1869:7)
-    at Function.listen (C:\Users\Usuario\Desktop\MyTest\node_modules\express\lib\application.js:635:24)
-    at Object.listen (C:\Users\Usuario\Desktop\MyTest\src\index.js:33:18)
-    at Runtime._execModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:882:12)
-    at Runtime.requireModuleOrMock (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1048:21)
-    at Object.require (C:\Users\Usuario\Desktop\MyTest\src\tests\user.test.js:3:16)
-    at Runtime._execModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
-    at Object.worker (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
-    </testCase>
-    <testCase name="Pruebas de registro de usuario Post" duration="176"/>
-    <testCase name="Pruebas de registro de usuario Post" duration="176"/>
-  </file>
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js">
-    <testCase name="Test crear casos de prueba Post - Caso exitoso" duration="2513">
-      <failure message="Error: listen EADDRINUSE: address already in use :::4030"><![CDATA[Error: listen EADDRINUSE: address already in use :::4030
-    at Server.setupListenHandle [as _listen2] (node:net:1733:16)
-    at listenInCluster (node:net:1781:12)
-    at Server.listen (node:net:1869:7)
-    at Function.listen (C:\Users\Usuario\Desktop\MyTest\node_modules\express\lib\application.js:635:24)
-    at Object.listen (C:\Users\Usuario\Desktop\MyTest\src\index.js:33:18)
-    at Runtime._execModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:882:12)
-    at Runtime.requireModuleOrMock (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1048:21)
-    at Object.require (C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js:3:16)
-    at Runtime._execModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1439:24)
-    at Runtime._loadModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:1022:12)
-    at Runtime.requireModule (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runtime\build\index.js:882:12)
-    at jestAdapter (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-circus\build\legacy-code-todo-rewrite\jestAdapter.js:77:13)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)
-    at runTestInternal (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:367:16)
-    at runTest (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\runTest.js:444:34)
-    at Object.worker (C:\Users\Usuario\Desktop\MyTest\node_modules\jest-runner\build\testWorker.js:106:12)]]></failure>
-    </testCase>
-    <testCase name="Test eliminar casos de prueba Delete - Caso exitoso" duration="360"/>
-    <testCase name="Test eliminar casos de prueba Delete - Intentar eliminar un caso inexistente" duration="179"/>
-    <testCase name="Test actualizar casos de prueba PUT - Caso exitoso" duration="358"/>
-    <testCase name="Test actualizar casos de prueba PUT - Intentar actualizar un caso inexistente" duration="178"/>
-    <testCase name="Test obtener casos de prueba GET - Caso exitoso" duration="178"/>
-    <testCase name="Test obtener casos de prueba GET - Intentar obtener casos de un proyecto que no existe" duration="180"/>
-    <testCase name="Test obtener casos de prueba GET - Entrada incorrecta" duration="225"/>
+  <file path="V:\Trabajos_JS\MyTest\src\tests\testResult.test.js">
+    <testCase name="Test crear resultado de prueba Post - Caso exitoso" duration="2868"/>
+    <testCase name="Project resultado de prueba GET - Caso exitoso" duration="380"/>
+    <testCase name="Test actualizar resultado de prueba PUT - Caso exitoso" duration="743"/>
+    <testCase name="Test actualizar resultado de prueba PUT - Intentar actualizar un resultado de prueba inexistente" duration="373"/>
+    <testCase name="Test eliminar resultado de prueba Delete - Caso exitoso" duration="557"/>
+    <testCase name="Test eliminar resultado de prueba Delete - Intentar eliminar un resultado de prueba inexistente" duration="372"/>
   </file>
 </testExecutions>

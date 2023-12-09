@@ -1,4 +1,4 @@
-const projectServices = require('../services/proyect.service.js');
+const projectServices = require('../services/project.service.js');
 
 const getProjects = async (req, res) => {
     const {page = 0, size = 5} = req.query;
@@ -20,8 +20,9 @@ const createProject = async(req,res) => {
     const {body} = req;
 
     try {
-        await projectServices.createProject(body);
+        const project = await projectServices.createProject(body);
         res.status(201).json({
+            project,
             msg: 'Proyecto creado con exito'
         });
 

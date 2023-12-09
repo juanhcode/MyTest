@@ -18,13 +18,13 @@ const ResultadoPrueba = db.define('resultado_prueba', {
     exitos: { 
         type: DataTypes.STRING
     },
-    captura_de_pantalla: {
+    foto: {
         type: DataTypes.STRING
     },
     registros: {
         type: DataTypes.STRING
     },
-    caso_prueba_id: {
+    caso_de_prueba_id: {
         type: DataTypes.INTEGER,
         references: {
             model: CasoPrueba,
@@ -38,6 +38,6 @@ const ResultadoPrueba = db.define('resultado_prueba', {
     }
 )
 
-ResultadoPrueba.belongsTo(CasoPrueba,{foreignKey:'caso_prueba_id'});
+ResultadoPrueba.belongsTo(CasoPrueba,{foreignKey:'caso_de_prueba_id'});
 
 module.exports = ResultadoPrueba
