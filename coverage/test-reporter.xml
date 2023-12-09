@@ -1,14 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\index.test.js">
+    <testCase name="Get Endpoints Get" duration="402"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\auth.test.js">
+    <testCase name="Pruebas de inicio de sesión Post" duration="3623"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="208"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="310"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="7"/>
+    <testCase name="Pruebas de inicio de sesión Debería fallar el inicio de sesión si se proporciona un SQL Injection en el nombre de usuario" duration="13"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\permiso.test.js">
+    <testCase name="Test crear permisos Post - Permiso exitoso" duration="849">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 201
+Received: 500
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\permiso.test.js:16:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test crear permisos Post - Permiso fallido" duration="10"/>
+  </file>
   <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\permisoUsuario.test.js">
-    <testCase name="Test eliminar permisos de usuario Post - Permiso Usuario exitoso" duration="193"/>
-    <testCase name="Test eliminar permisos de usuario Delete - Permiso Usuario Eliminado" duration="547"/>
-    <testCase name="Test eliminar permisos de usuario Delete - Intentar eliminar un caso inexistente" duration="531">
+    <testCase name="Test eliminar permisos de usuario Post - Permiso Usuario exitoso" duration="15">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;id&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'id')
+    at Object.id (C:\Users\Usuario\Desktop\MyTest\src\tests\permisoUsuario.test.js:45:39)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test eliminar permisos de usuario Delete - Permiso Usuario Eliminado" duration="1">
+      <failure message="TypeError: Cannot read properties of undefined (reading &apos;id&apos;)"><![CDATA[TypeError: Cannot read properties of undefined (reading 'id')
+    at Object.id (C:\Users\Usuario\Desktop\MyTest\src\tests\permisoUsuario.test.js:45:39)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\user.test.js">
+    <testCase name="Pruebas de registro de usuario Post" duration="3056"/>
+    <testCase name="Pruebas de registro de usuario Post" duration="224"/>
+    <testCase name="Pruebas de registro de usuario Post" duration="185"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js">
+    <testCase name="Test crear seguimientos de errores Post - Seguimiento exitoso" duration="874">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 201
+Received: 401
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js:18:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test eliminar seguimiento Post - Seguimiento exitoso" duration="541"/>
+    <testCase name="Test eliminar seguimiento Delete - seguimiento exitoso" duration="362"/>
+    <testCase name="Test eliminar seguimiento Delete - Intentar eliminar un seguimiento inexistente" duration="184"/>
+    <testCase name="Test actualizar seguimientos Post - Seguimiento exitoso" duration="551"/>
+    <testCase name="Test actualizar seguimientos PUT - Seguimiento exitoso" duration="361"/>
+    <testCase name="Test actualizar seguimientos PUT - Intentar actualizar un caso inexistente" duration="183"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js">
+    <testCase name="Test crear casos de prueba Post - Caso exitoso" duration="3179"/>
+    <testCase name="Test eliminar casos de prueba Delete - Caso exitoso" duration="381">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 200
+Received: 403
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js:57:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test eliminar casos de prueba Delete - Intentar eliminar un caso inexistente" duration="362">
       <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
 
 Expected: 404
-Received: 200
-    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\permisoUsuario.test.js:73:32)
+Received: 403
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js:67:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test actualizar casos de prueba PUT - Caso exitoso" duration="361">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 200
+Received: 403
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js:100:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test actualizar casos de prueba PUT - Intentar actualizar un caso inexistente" duration="360">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 404
+Received: 403
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js:109:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test obtener casos de prueba GET - Caso exitoso" duration="363">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 200
+Received: 403
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js:121:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test obtener casos de prueba GET - Intentar obtener casos de un proyecto que no existe" duration="378">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 200
+Received: 403
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js:128:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
+    <testCase name="Test obtener casos de prueba GET - Entrada incorrecta" duration="357">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 500
+Received: 403
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js:136:32)
     at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
     </testCase>
   </file>
