@@ -2,12 +2,14 @@ const { faker } = require('@faker-js/faker');
 const request = require('supertest');
 const server = require('../index');
 const app = request(server)
-
+require('dotenv').config();
+let jwt = process.env.TOKEN
 
 describe('Test crear casos de prueba', () => {
     it('Post - Caso exitoso', async () => {
         const res = await app
             .post('/v1/caso')
+            .set('Authorization', `Bearer ${jwt}`)
             .send({
                 nombre: faker.word.words(),
                 descripcion: faker.word.words(),
@@ -30,6 +32,7 @@ describe('Test eliminar casos de prueba', () => {
     beforeAll(async () => {
         const res = await app
             .post('/v1/caso')
+            .set('Authorization', `Bearer ${jwt}`)
             .send({
                 nombre: faker.word.words(),
                 descripcion: faker.word.words(),
@@ -48,7 +51,8 @@ describe('Test eliminar casos de prueba', () => {
 
     it('Delete - Caso exitoso', async () => {
         const res = await app
-            .delete(`/v1/caso/${casoIdToDelete}`);
+            .delete(`/v1/caso/${casoIdToDelete}`)
+            .set('Authorization', `Bearer ${jwt}`);
         
         expect(res.statusCode).toEqual(200);
     });
@@ -57,7 +61,8 @@ describe('Test eliminar casos de prueba', () => {
         const casoIdInexistente = 999;
 
         const res = await app
-            .delete(`/v1/caso/${casoIdInexistente}`);
+            .delete(`/v1/caso/${casoIdInexistente}`)
+            .set('Authorization', `Bearer ${jwt}`);
         
         expect(res.statusCode).toEqual(404);
     });
@@ -70,6 +75,7 @@ describe('Test actualizar casos de prueba', () => {
     beforeAll(async () => {
         const res = await app
             .post('/v1/caso')
+            .set('Authorization', `Bearer ${jwt}`)
             .send({
                 nombre: faker.word.words(),
                 descripcion: faker.word.words(),
@@ -89,6 +95,7 @@ describe('Test actualizar casos de prueba', () => {
         caso.prioridades = 'Alta';
         const res = await app
             .put(`/v1/caso/${id}`)
+            .set('Authorization', `Bearer ${jwt}`)
             .send(caso)
         expect(res.statusCode).toEqual(200);
     });
@@ -96,7 +103,8 @@ describe('Test actualizar casos de prueba', () => {
         const casoIdInexistente = 999;
 
         const res = await app
-            .put(`/v1/caso/${casoIdInexistente}`);
+            .put(`/v1/caso/${casoIdInexistente}`)
+            .set('Authorization', `Bearer ${jwt}`);
         
         expect(res.statusCode).toEqual(404);
     });
@@ -109,19 +117,22 @@ describe('Test obtener casos de prueba', () => {
         const id = 2;
         const res = await app
             .get(`/v1/caso/${id}`)
+            .set('Authorization', `Bearer ${jwt}`)
         expect(res.statusCode).toEqual(200);
     });
     it('GET - Intentar obtener casos de un proyecto que no existe', async () => {
         const proyectoIdInexistente = 999;
         const res = await app
-            .get(`/v1/caso/${proyectoIdInexistente}`);
+            .get(`/v1/caso/${proyectoIdInexistente}`)
+            .set('Authorization', `Bearer ${jwt}`);
         expect(res.statusCode).toEqual(200);
         expect(res.body.error).toBe(`No hay casos de prueba para este proyecto`);
     });
     it('GET - Entrada incorrecta', async () => {
         const proyectoIdInexistente = 'd';
         const res = await app
-            .get(`/v1/caso/${proyectoIdInexistente}`);
+            .get(`/v1/caso/${proyectoIdInexistente}`)
+            .set('Authorization', `Bearer ${jwt}`);
         expect(res.statusCode).toEqual(500);
         expect(res.body.error).toBe(`Error al obtener todos los casos de prueba`);
     });
