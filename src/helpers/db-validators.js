@@ -1,6 +1,7 @@
 const Usuario = require('../database/models/Usuario');
 const Proyecto = require('../database/models/Proyecto');
 const ResultadoPrueba = require('../database/models/ResultadoPrueba');
+const Informe = require('../database/models/Informe');
 
 //==================Validaciones de usuario=============================
 
@@ -65,6 +66,20 @@ const testResultByIDExistsMiddleware = async (id) => {
 
 //==========================================================================
 
+//======================Validacion informes=================================
+const reportByIDExistsMiddleware = async (id) => {
+    const report = await Informe.findByPk(id)
+    if (!report) {
+        throw new Error (`El Informe con id: ${id}  no se encuentra en la BD`);
+    }
+}
+
+const reportByIDExists = async (id) => {
+    const reportExists = await Informe.findByPk(id)
+    return reportExists;
+}
+//===========================================================================
+
 module.exports = {
     userByIDExists,
     userByIDExistsMiddleware,
@@ -72,5 +87,7 @@ module.exports = {
     emailExists,
     projectByIDExists,
     testResultByIDExistsMiddleware,
-    testResultByIDExists
+    testResultByIDExists,
+    reportByIDExistsMiddleware,
+    reportByIDExists
 }

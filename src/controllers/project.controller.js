@@ -20,8 +20,9 @@ const createProject = async(req,res) => {
     const {body} = req;
 
     try {
-        await projectServices.createProject(body);
+        const project = await projectServices.createProject(body);
         res.status(201).json({
+            project,
             msg: 'Proyecto creado con exito'
         });
 

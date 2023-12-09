@@ -1,6 +1,6 @@
 const express =  require('express');
 const app =  express();
-const port = 4030
+const port = 3030
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
 require('dotenv').config();
@@ -13,6 +13,8 @@ const projects = require('./v1/routes/project.routes')
 const manageRelations = require('./v1/routes/manage.routes')
 const testResults = require('./v1/routes/testResult.routes')
 const uploadImage = require('./v1/routes/image.routes')
+const report = require('./v1/routes/report.routes')
+const pdf = require('./v1/routes/pdf.routes')
 
 app.use(express.json());
 app.use(cors());
@@ -29,6 +31,8 @@ app.use('/v1/manage',manageRelations)
 app.use('/v1/testResult',testResults)
 app.use('/v1/uploadFile',uploadImage)
 app.use('/v1/caso', caso);
+app.use('/v1/report', report);
+app.use('/v1/reportPDF', pdf);
 
 app.get('/', (req, res) => {
     return res.status(200).json({ 
