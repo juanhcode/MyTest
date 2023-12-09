@@ -5,6 +5,12 @@ const getUserXProject = async (req, res) => {
     res.json(getAll);
 }
 
+const getProjectsByUser = async (req, res) => {
+    const {id} = req.params
+    const getAllProjectsByUser = await manageServices.getProjectsByUserID(id);
+    res.json(getAllProjectsByUser);
+}
+
 const createManageRelation = async (req, res) => {
     const {body} = req;
     try {
@@ -37,6 +43,7 @@ const deleteManageRelation = async (req,res) => {
 
 module.exports = {
     getUserXProject,
+    getProjectsByUser,
     createManageRelation,
     deleteManageRelation
 }

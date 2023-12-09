@@ -9,8 +9,9 @@ const createReport = async (req,res) => {
     const {body} = req;
 
     try {
-        await reportServices.createReport(body);
+        const report = await reportServices.createReport(body);
         res.status(201).json({
+            report,
             msg: 'Informe creado con exito'
         });
     } catch (error) {

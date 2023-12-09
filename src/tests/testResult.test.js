@@ -4,88 +4,94 @@ const server = require('../index');
 const app = request(server)
 const token = process.env.TOKEN_TEST
 
-describe('Test crear proyecto', () => {
+describe('Test crear resultado de prueba', () => {
     it('Post - Caso exitoso', async () => {
         const res = await app
-            .post('/v1/project')
+            .post('/v1/testResult')
             .set('Authorization', `Bearer ${token}`)
             .send({
-                nombre: faker.word.words()
+                casos_no_ejecutados: faker.word.words(),
+                fallos: faker.word.words(),
+                exitos: faker.word.words(),
+                caso_de_prueba_id: 6
             });
         expect(res.statusCode).toEqual(201);
     });
     
 });
 
-describe('Project obtener proyectos', () => {
+describe('Project resultado de prueba', () => {
     it('GET - Caso exitoso', async () => {
         const res = await app
-            .get(`/v1/project`)
+            .get(`/v1/testResult`)
             .set('Authorization', `Bearer ${token}`)
         expect(res.statusCode).toEqual(200);
     });
 });
 
-describe('Test actualizar proyecto', () => {
-    let project;
+describe('Test actualizar resultado de prueba', () => {
+    let testResult;
 
     beforeAll(async () => {
         const res = await app
-            .post('/v1/project')
+            .post('/v1/testResult')
             .set('Authorization', `Bearer ${token}`)
             .send({
-                nombre: faker.word.words(),
+                casos_no_ejecutados: faker.word.words(),
             });
-        project = res.body.project;
+            testResult = res.body.testResult;
     });
 
     it('PUT - Caso exitoso', async () => {
-        const {id} = project;
+        const {id} = testResult;
         const res = await app
-            .put(`/v1/project/${id}`)
+            .put(`/v1/testResult/${id}`)
             .set('Authorization', `Bearer ${token}`)
-            .send(project);
+            .send(testResult);
         expect(res.statusCode).toEqual(200);
     });
-    it('PUT - Intentar actualizar un proyecto inexistente', async () => {
-        const nonExistentProject = 999;
+    it('PUT - Intentar actualizar un resultado de prueba inexistente', async () => {
+        const nonExistentTestResult = 999;
 
         const res = await app
-            .put(`/v1/project/${nonExistentProject}`)
+            .put(`/v1/testResult/${nonExistentTestResult}`)
             .set('Authorization', `Bearer ${token}`);
         
         expect(res.statusCode).toEqual(400);
     });
 });
 
-describe('Test eliminar proyecto', () => {
-    let projectIdDelete;
+describe('Test eliminar resultado de prueba', () => {
+    let testResultIdDelete;
 
     beforeAll(async () => {
         const res = await app
-            .post('/v1/project')
+            .post('/v1/testResult')
             .set('Authorization', `Bearer ${token}`)
             .send({
-                nombre: faker.word.words(),
+                casos_no_ejecutados: faker.word.words(),
+                fallos: faker.word.words(),
+                exitos: faker.word.words(),
+                caso_de_prueba_id: 6
             });
 
 
-            projectIdDelete = res.body.project.id;
+            testResultIdDelete = res.body.testResult.id;
     });
 
     it('Delete - Caso exitoso', async () => {
         const res = await app
-            .delete(`/v1/project/${projectIdDelete}`)
+            .delete(`/v1/testResult/${testResultIdDelete}`)
             .set('Authorization', `Bearer ${token}`);
         
         expect(res.statusCode).toEqual(200);
     });
 
-    it('Delete - Intentar eliminar un proyecto inexistente', async () => {
-        const nonExistentProject = 999;
+    it('Delete - Intentar eliminar un resultado de prueba inexistente', async () => {
+        const nonExistentTestResult = 999;
 
         const res = await app
-            .delete(`/v1/project/${nonExistentProject}`)
+            .delete(`/v1/testResult/${nonExistentTestResult}`)
             .set('Authorization', `Bearer ${token}`);
         
         expect(res.statusCode).toEqual(400);

@@ -9,8 +9,9 @@ const createTestResult = async(req,res) => {
     const {body} = req;
 
     try {
-        await testResultServices.createTestResult(body);
+        const testResult = await testResultServices.createTestResult(body);
         res.status(201).json({
+            testResult,
             msg: 'Resultado de prueba creado con exito'
         });
 

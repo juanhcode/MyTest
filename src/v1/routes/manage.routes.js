@@ -14,6 +14,12 @@ router.get('', [
     checkAuth
 ], manageController.getUserXProject);
 
+router.get('/:id', [
+    checkAuth,
+    check('id').custom(userByIDExistsMiddleware),
+    validateFields
+], manageController.getProjectsByUser);
+
 router.post('', [
     checkAuth,
     check('usuario_id','el id del usuario es obligatorio').not().isEmpty(),
