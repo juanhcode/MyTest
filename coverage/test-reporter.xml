@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\index.test.js">
-    <testCase name="Get Endpoints Get" duration="120"/>
-  </file>
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\auth.test.js">
-    <testCase name="Pruebas de inicio de sesión Post" duration="2912"/>
-    <testCase name="Pruebas de inicio de sesión Post" duration="198"/>
-    <testCase name="Pruebas de inicio de sesión Post" duration="337"/>
-    <testCase name="Pruebas de inicio de sesión Post" duration="13"/>
-    <testCase name="Pruebas de inicio de sesión Debería fallar el inicio de sesión si se proporciona un SQL Injection en el nombre de usuario" duration="12"/>
-  </file>
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\user.test.js">
-    <testCase name="Pruebas de registro de usuario Post" duration="2911"/>
-    <testCase name="Pruebas de registro de usuario Post" duration="186"/>
-    <testCase name="Pruebas de registro de usuario Post" duration="181"/>
-  </file>
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js">
-    <testCase name="Test crear seguimientos de errores Post - Seguimiento exitoso" duration="3003"/>
-    <testCase name="Test eliminar seguimiento Post - Seguimiento exitoso" duration="529"/>
-    <testCase name="Test eliminar seguimiento Delete - seguimiento exitoso" duration="378"/>
-    <testCase name="Test eliminar seguimiento Delete - Intentar eliminar un seguimiento inexistente" duration="178"/>
-    <testCase name="Test actualizar seguimientos Post - Seguimiento exitoso" duration="529"/>
-    <testCase name="Test actualizar seguimientos PUT - Seguimiento exitoso" duration="351"/>
-    <testCase name="Test actualizar seguimientos PUT - Intentar actualizar un caso inexistente" duration="181"/>
-  </file>
-  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js">
-    <testCase name="Test crear casos de prueba Post - Caso exitoso" duration="2975"/>
-    <testCase name="Test eliminar casos de prueba Delete - Caso exitoso" duration="744"/>
-    <testCase name="Test eliminar casos de prueba Delete - Intentar eliminar un caso inexistente" duration="534"/>
-    <testCase name="Test actualizar casos de prueba PUT - Caso exitoso" duration="702"/>
-    <testCase name="Test actualizar casos de prueba PUT - Intentar actualizar un caso inexistente" duration="525"/>
-    <testCase name="Test obtener casos de prueba GET - Caso exitoso" duration="526"/>
-    <testCase name="Test obtener casos de prueba GET - Intentar obtener casos de un proyecto que no existe" duration="525"/>
-    <testCase name="Test obtener casos de prueba GET - Entrada incorrecta" duration="591"/>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\permisoUsuario.test.js">
+    <testCase name="Test eliminar permisos de usuario Post - Permiso Usuario exitoso" duration="193"/>
+    <testCase name="Test eliminar permisos de usuario Delete - Permiso Usuario Eliminado" duration="547"/>
+    <testCase name="Test eliminar permisos de usuario Delete - Intentar eliminar un caso inexistente" duration="531">
+      <failure message="Error: expect(received).toEqual(expected) // deep equality"><![CDATA[Error: expect(received).toEqual(expected) // deep equality
+
+Expected: 404
+Received: 200
+    at Object.toEqual (C:\Users\Usuario\Desktop\MyTest\src\tests\permisoUsuario.test.js:73:32)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
+    </testCase>
   </file>
 </testExecutions>

@@ -20,8 +20,18 @@ const getPermisosByUsuario = async (idUsuario) => {
     return getAllPermisos;
 }
 
+const deletePermisoUsuario = async(usuarioId)=>{
+    const permisoUsuarioDeleted = await PermisoUsuario.destroy({
+        where:{
+            usuario_id:usuarioId
+        }
+    });
+    return permisoUsuarioDeleted;
+}
+
 
 module.exports = {
     crearPermisoUsuario,
-    getPermisosByUsuario
+    getPermisosByUsuario,
+    deletePermisoUsuario
 }

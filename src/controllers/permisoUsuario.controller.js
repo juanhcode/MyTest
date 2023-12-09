@@ -37,8 +37,16 @@ const getAllPermisosByUser = async (req, res) => {
 }
 
 
+const deletePermisoUsuario = async (req, res) => {
+    const { id } = req.params;
+    await permisoUsuarioServicio.deletePermisoUsuario(id);
+    res.status(200).json({
+        msg: `Permiso de usuario ha sido eliminado.`
+    });
+}
 
 module.exports = {
     crearPermisoUsuario,
-    getAllPermisosByUser
+    getAllPermisosByUser,
+    deletePermisoUsuario
 }
