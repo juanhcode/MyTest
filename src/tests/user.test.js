@@ -25,6 +25,7 @@ describe('Pruebas de registro de usuario', () => {
         correo: "usuario10@gmail.com",
         contrasenia: "123456"
       })
+      console.log(response.body);
       const parsedResponse = JSON.parse(response.text);
       expect(response.status).toBe(400);
       expect(parsedResponse.errors[0].msg).toBe('El correo usuario10@gmail.com ya esta registrado')

@@ -1,7 +1,8 @@
 const request = require('supertest');
 const server = require('../index');
 const app = request(server)
-const token = process.env.TOKEN_TEST
+require('dotenv').config();
+let token = process.env.TOKEN
 
 describe('Test crear relacion usuario y proyecto(gestiona)', () => {
     it('Post - Caso exitoso', async () => {
@@ -9,8 +10,8 @@ describe('Test crear relacion usuario y proyecto(gestiona)', () => {
             .post('/v1/manage')
             .set('Authorization', `Bearer ${token}`)
             .send({
-                usuario_id: 22,
-                proyecto_id: 3
+                usuario_id: 2,
+                proyecto_id: 1
             });
         expect(res.statusCode).toEqual(201);
     });
@@ -27,14 +28,13 @@ describe('Manage obtener relacion usuario y proyecto(gestiona)', () => {
 });
 
 describe('Test eliminar relacion usuario y proyecto(gestiona)', () => {
-    let projectIdDelete = 3;
-    let userIdDelete = 22;
+    let projectIdDelete = 1;
+    let userIdDelete = 2;
 
     it('Delete - Caso exitoso', async () => {
         const res = await app
             .delete(`/v1/manage/${userIdDelete}/${projectIdDelete}`)
             .set('Authorization', `Bearer ${token}`);
-        
         expect(res.statusCode).toEqual(200);
     });
 

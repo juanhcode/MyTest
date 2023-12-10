@@ -1,11 +1,15 @@
 const { Sequelize } = require('sequelize');
 require('dotenv').config();
-
+console.log(process.env.POSTGRESQL_ADDON_DB);
+console.log(process.env.POSTGRESQL_ADDON_USER);
+console.log(process.env.POSTGRESQL_ADDON_PASSWORD);
+console.log(process.env.POSTGRESQL_ADDON_HOST);
+console.log(process.env.POSTGRESQL_ADDON_PORT);
 const db = new Sequelize(
-    process.env.POSTGRESQL_ADDON_DB,
-    process.env.POSTGRESQL_ADDON_USER,
-    process.env.POSTGRESQL_ADDON_PASSWORD,
     {
+        database: process.env.POSTGRESQL_ADDON_DB,
+        username: process.env.POSTGRESQL_ADDON_USER,
+        password: process.env.POSTGRESQL_ADDON_PASSWORD,
         host: process.env.POSTGRESQL_ADDON_HOST,
         dialect: 'postgres',
         loggin: false,
