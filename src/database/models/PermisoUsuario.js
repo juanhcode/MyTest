@@ -3,7 +3,7 @@ const db = require('../connection');
 const Usuario = require('./Usuario');
 const Permiso = require('./Permiso');
 
-const PermisoUsuario = db.define('permisoUsuario', {
+const PermisoUsuario = db.define('permiso_usuario', {
     usuario_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
@@ -29,7 +29,7 @@ const PermisoUsuario = db.define('permisoUsuario', {
     }
 )
 
-PermisoUsuario.belongsTo(Usuario,{foreignKey: 'id'});
-PermisoUsuario.belongsTo(Permiso,{foreignKey: 'id'})
+PermisoUsuario.belongsTo(Usuario,{foreignKey: 'usuario_id'});
+PermisoUsuario.belongsTo(Permiso,{foreignKey: 'permiso_id'})
 
 module.exports = PermisoUsuario

@@ -1,13 +1,14 @@
 const { DataTypes } = require('sequelize');
 const db = require('../connection');
-const Usuario = require('./Usuario');
+const Proyecto = require('./Proyecto');
 
 
-const CasoPrueba = db.define('casoPrueba', {
+const CasoPrueba = db.define('caso_de_prueba', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        allowNull: false
+        allowNull: false,
+        autoIncrement: true
     },
     nombre: {
         type: DataTypes.STRING,
@@ -34,10 +35,11 @@ const CasoPrueba = db.define('casoPrueba', {
     expectativas: {
         type: DataTypes.STRING
     },
-    usuario_id: {
+    proyecto_id: {
         type: DataTypes.INTEGER,
+        allowNull: false,
         references: {
-            model: Usuario,
+            model: Proyecto,
             key: 'id'
         }
     }
@@ -48,6 +50,6 @@ const CasoPrueba = db.define('casoPrueba', {
     }
 )
 
-CasoPrueba.belongsTo(Usuario, {foreignKey:'id'});
+CasoPrueba.belongsTo(Proyecto, {foreignKey:'proyecto_id'});
 
 module.exports = CasoPrueba

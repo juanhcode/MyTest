@@ -24,7 +24,9 @@ const Usuario = db.define('usuario', {
         allowNull: true
     },
     rol: {
-        type: DataTypes.STRING
+        type: DataTypes.STRING,
+        allowNull: false,
+        defaultValue: "Usuario"
     }
 },
     {

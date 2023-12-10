@@ -1,2 +1,7 @@
 node_modules
+<<<<<<< HEAD
 .env
+=======
+.env
+.github
+>>>>>>> a56a494f4e47394d45391668163e53ea759d3a75

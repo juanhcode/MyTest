@@ -1,6 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\permiso.test.js">
+    <testCase name="Test crear permisos Post - Permiso exitoso" duration="1535"/>
+    <testCase name="Test crear permisos Post - Permiso fallido" duration="21"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\user.test.js">
+    <testCase name="Pruebas de registro de usuario Post" duration="2150"/>
+    <testCase name="Pruebas de registro de usuario Post" duration="128"/>
+    <testCase name="Pruebas de registro de usuario Post" duration="112"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\permisoUsuario.test.js">
+    <testCase name="Test crear permisos de usuario Post - Permiso Usuario exitoso" duration="249"/>
+    <testCase name="Test eliminar permisos de usuario Post - Permiso Usuario exitoso" duration="108"/>
+    <testCase name="Test eliminar permisos de usuario Delete - Permiso Usuario Eliminado" duration="352"/>
+    <testCase name="Test verificar permisos de usuario admin Get - Permiso fallido" duration="215"/>
+    <testCase name="Test obtener permisos de usuario GET - Permisos de usuario exitoso" duration="107"/>
+    <testCase name="Test obtener permisos de usuario GET - Intentar obtener seguimientos de id que no existe" duration="116"/>
+    <testCase name="Test obtener permisos de usuario GET - Entrada incorrecta" duration="591"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\seguimiento.test.js">
+    <testCase name="Test crear seguimientos de errores Post - Seguimiento exitoso" duration="1816"/>
+    <testCase name="Test eliminar seguimiento Post - Seguimiento exitoso" duration="321"/>
+    <testCase name="Test eliminar seguimiento Delete - seguimiento exitoso" duration="201"/>
+    <testCase name="Test eliminar seguimiento Delete - Intentar eliminar un seguimiento inexistente" duration="108"/>
+    <testCase name="Test actualizar seguimientos Post - Seguimiento exitoso" duration="306"/>
+    <testCase name="Test actualizar seguimientos PUT - Seguimiento exitoso" duration="205"/>
+    <testCase name="Test actualizar seguimientos PUT - Intentar actualizar un caso inexistente" duration="110"/>
+    <testCase name="Test obtener casos de prueba GET - Seguimientos exitoso" duration="116"/>
+    <testCase name="Test obtener casos de prueba GET - Intentar obtener seguimientos de id que no existe" duration="101"/>
+    <testCase name="Test obtener casos de prueba GET - Entrada incorrecta" duration="307"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\project.test.js">
+    <testCase name="Test crear proyecto Post - Caso exitoso" duration="1884"/>
+    <testCase name="Project obtener proyectos GET - Caso exitoso" duration="414"/>
+    <testCase name="Test actualizar proyecto PUT - Caso exitoso" duration="442"/>
+    <testCase name="Test actualizar proyecto PUT - Intentar actualizar un proyecto inexistente" duration="289"/>
+    <testCase name="Test eliminar proyecto Delete - Caso exitoso" duration="385"/>
+    <testCase name="Test eliminar proyecto Delete - Intentar eliminar un proyecto inexistente" duration="282"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\testResult.test.js">
+    <testCase name="Test crear resultado de prueba Post - Caso exitoso" duration="1758"/>
+    <testCase name="Project resultado de prueba GET - Caso exitoso" duration="316"/>
+    <testCase name="Test actualizar resultado de prueba PUT - Caso exitoso" duration="500"/>
+    <testCase name="Test actualizar resultado de prueba PUT - Intentar actualizar un resultado de prueba inexistente" duration="297"/>
+    <testCase name="Test eliminar resultado de prueba Delete - Caso exitoso" duration="381"/>
+    <testCase name="Test eliminar resultado de prueba Delete - Intentar eliminar un resultado de prueba inexistente" duration="314"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\caso.test.js">
+    <testCase name="Test crear casos de prueba Post - Caso exitoso" duration="1993"/>
+    <testCase name="Test eliminar casos de prueba Delete - Caso exitoso" duration="394"/>
+    <testCase name="Test eliminar casos de prueba Delete - Intentar eliminar un caso inexistente" duration="304"/>
+    <testCase name="Test actualizar casos de prueba PUT - Caso exitoso" duration="415"/>
+    <testCase name="Test actualizar casos de prueba PUT - Intentar actualizar un caso inexistente" duration="304"/>
+    <testCase name="Test obtener casos de prueba GET - Caso exitoso" duration="290"/>
+    <testCase name="Test obtener casos de prueba GET - Intentar obtener casos de un proyecto que no existe" duration="293"/>
+    <testCase name="Test obtener casos de prueba GET - Entrada incorrecta" duration="506"/>
+  </file>
   <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\index.test.js">
-    <testCase name="Get Endpoints Get" duration="147"/>
+    <testCase name="Get Endpoints Get" duration="78"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\auth.test.js">
+    <testCase name="Pruebas de inicio de sesión Post" duration="1548"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="96"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="188"/>
+    <testCase name="Pruebas de inicio de sesión Post" duration="6"/>
+    <testCase name="Pruebas de inicio de sesión Debería fallar el inicio de sesión si se proporciona un SQL Injection en el correo" duration="6"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\manage.test.js">
+    <testCase name="Test crear relacion usuario y proyecto(gestiona) Post - Caso exitoso" duration="1899"/>
+    <testCase name="Manage obtener relacion usuario y proyecto(gestiona) GET - Caso exitoso" duration="301"/>
+    <testCase name="Test eliminar relacion usuario y proyecto(gestiona) Delete - Caso exitoso" duration="456"/>
+    <testCase name="Test eliminar relacion usuario y proyecto(gestiona) Delete - Intentar eliminar una relacion usuario/proyecto inexistente" duration="5"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\image.test.js">
+    <testCase name="Subir/Actualizar imagen PUT - Caso exitoso" duration="3587"/>
+    <testCase name="Subir/Actualizar imagen PUT - Intentar actualizar una coleccion inexistente" duration="54"/>
+    <testCase name="Subir/Actualizar imagen PUT - Intentar actualizar una usuario/testResult inexistente" duration="11"/>
+    <testCase name="Subir/Actualizar imagen PUT - Intentar actualizar una usuario/testResult sin mandar la imagen" duration="5"/>
+  </file>
+  <file path="C:\Users\Usuario\Desktop\MyTest\src\tests\report.test.js">
+    <testCase name="Test crear infrome Post - Caso exitoso" duration="1816"/>
+    <testCase name="Manage obtener informes GET - Caso exitoso" duration="277"/>
+    <testCase name="Test actualizar informe PUT - Caso exitoso" duration="457"/>
+    <testCase name="Test actualizar informe PUT - Intentar actualizar un informe inexistente" duration="276"/>
+    <testCase name="Test eliminar informe Delete - Caso exitoso" duration="368"/>
+    <testCase name="Test eliminar informe Delete - Intentar eliminar un proyecto inexistente" duration="276"/>
   </file>
 </testExecutions>

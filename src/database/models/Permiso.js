@@ -5,7 +5,8 @@ const Permiso = db.define('permiso', {
     id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        allowNull: false
+        allowNull: false,
+        autoIncrement: true
     },
     nombre: {
         type: DataTypes.STRING,
