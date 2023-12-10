@@ -2,7 +2,9 @@ const express =  require('express');
 const app =  express();
 const port = 3030
 const cors = require('cors');
+const helmet = require("helmet");
 const fileUpload = require('express-fileupload');
+
 require('dotenv').config();
 
 
@@ -17,7 +19,10 @@ const report = require('./v1/routes/report.routes')
 const pdf = require('./v1/routes/pdf.routes')
 
 app.use(express.json());
-app.use(cors());
+app.use(helmet());
+app.use(cors({
+  origin: ['http://localhost:5173']
+}));
 app.use(fileUpload({
   useTempFiles:true,
   tempFileDir: '/tmp/',
