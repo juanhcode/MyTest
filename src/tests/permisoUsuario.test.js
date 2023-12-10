@@ -4,7 +4,6 @@ const server = require('../index');
 const app = request(server)
 require('dotenv').config();
 let jwt = process.env.TOKEN
-/*
 describe('Test crear permisos de usuario', () => {
     let permisoId;
     beforeAll(async () => {
@@ -22,14 +21,13 @@ describe('Test crear permisos de usuario', () => {
             .post('/v1/permisoUsuario')
             .set('Authorization', `Bearer ${jwt}`)
             .send({
-                usuario_id:50,
+                usuario_id:2,
                 permiso_id:permisoId
             });
         expect(res.statusCode).toEqual(201);
     });
     
 });
-*/
 
 describe('Test eliminar permisos de usuario', () => {
     let permisoId;
@@ -50,7 +48,7 @@ describe('Test eliminar permisos de usuario', () => {
             .post('/v1/permisoUsuario')
             .set('Authorization', `Bearer ${jwt}`)
             .send({
-                usuario_id:51,
+                usuario_id:2,
                 permiso_id:permisoId
             });
             idUser = res.body.caso.usuario_id;

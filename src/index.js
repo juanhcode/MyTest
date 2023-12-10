@@ -3,6 +3,7 @@ const app =  express();
 const port = 3030
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
+const morgan = require('morgan');
 require('dotenv').config();
 
 const users = require('./v1/routes/user.routes');
@@ -14,7 +15,11 @@ const testResults = require('./v1/routes/testResult.routes');
 const uploadImage = require('./v1/routes/image.routes');
 const report = require('./v1/routes/report.routes');
 const pdf = require('./v1/routes/pdf.routes');
+const seguimiento = require('./v1/routes/seguimiento.routes');
+const permiso = require('./v1/routes/permiso.route')
+const permisoUsuario = require('./v1/routes/permisoUsuario.route')
 
+app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
 app.use(fileUpload({
@@ -44,8 +49,8 @@ app.get('/', (req, res) => {
 });
 
 let server = app.listen(0, () => {
-  const port = server.address().port;
-  console.log(`Application server running on ${port}`);
+  const port1 = server.address().port;
+  console.log(`Application server running on ${port1}`);
 });
 
 module.exports = server;

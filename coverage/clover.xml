@@ -1,104 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<coverage generated="1702164571291" clover="3.2.0">
-  <project timestamp="1702164571291" name="All files">
-    <metrics statements="490" coveredstatements="351" conditionals="43" coveredconditionals="18" methods="61" coveredmethods="28" elements="594" coveredelements="397" complexity="0" loc="490" ncloc="490" packages="8" files="39" classes="39"/>
+<coverage generated="1702179890035" clover="3.2.0">
+  <project timestamp="1702179890035" name="All files">
+    <metrics statements="742" coveredstatements="636" conditionals="66" coveredconditionals="43" methods="97" coveredmethods="76" elements="905" coveredelements="755" complexity="0" loc="742" ncloc="742" packages="8" files="53" classes="53"/>
     <package name="src">
-      <metrics statements="30" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <metrics statements="41" coveredstatements="41" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="index.js" path="C:\Users\Usuario\Desktop\MyTest\src\index.js">
-        <metrics statements="30" coveredstatements="30" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="9" count="7" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
-        <line num="11" count="7" type="stmt"/>
-        <line num="12" count="7" type="stmt"/>
-        <line num="13" count="7" type="stmt"/>
-        <line num="14" count="7" type="stmt"/>
-        <line num="15" count="7" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
-        <line num="17" count="7" type="stmt"/>
-        <line num="18" count="7" type="stmt"/>
-        <line num="20" count="7" type="stmt"/>
-        <line num="21" count="7" type="stmt"/>
-        <line num="22" count="7" type="stmt"/>
-        <line num="23" count="7" type="stmt"/>
-        <line num="24" count="7" type="stmt"/>
-        <line num="25" count="7" type="stmt"/>
-        <line num="26" count="7" type="stmt"/>
-        <line num="27" count="7" type="stmt"/>
-        <line num="29" count="7" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="36" count="7" type="stmt"/>
-        <line num="37" count="7" type="stmt"/>
-        <line num="38" count="7" type="stmt"/>
-        <line num="41" count="7" type="stmt"/>
+        <metrics statements="41" coveredstatements="41" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="18" count="12" type="stmt"/>
+        <line num="19" count="12" type="stmt"/>
+        <line num="20" count="12" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
+        <line num="24" count="12" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+        <line num="36" count="12" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
+        <line num="38" count="12" type="stmt"/>
+        <line num="39" count="12" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
+        <line num="41" count="12" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
+        <line num="44" count="12" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="51" count="12" type="stmt"/>
+        <line num="52" count="12" type="stmt"/>
+        <line num="53" count="12" type="stmt"/>
+        <line num="56" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.controllers">
-      <metrics statements="173" coveredstatements="83" conditionals="20" coveredconditionals="8" methods="22" coveredmethods="7"/>
+      <metrics statements="267" coveredstatements="208" conditionals="29" coveredconditionals="19" methods="35" coveredmethods="28"/>
       <file name="auth.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\auth.controller.js">
         <metrics statements="17" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-=======
-<coverage generated="1702142268553" clover="3.2.0">
-  <project timestamp="1702142268553" name="All files">
-    <metrics statements="567" coveredstatements="425" conditionals="52" coveredconditionals="26" methods="73" coveredmethods="43" elements="692" coveredelements="494" complexity="0" loc="567" ncloc="567" packages="8" files="40" classes="40"/>
-    <package name="src">
-      <metrics statements="33" coveredstatements="33" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <file name="index.js" path="V:\Trabajos_JS\MyTest\src\index.js">
-        <metrics statements="33" coveredstatements="33" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="9" count="9" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="11" count="9" type="stmt"/>
-        <line num="12" count="9" type="stmt"/>
-        <line num="13" count="9" type="stmt"/>
-        <line num="14" count="9" type="stmt"/>
-        <line num="15" count="9" type="stmt"/>
-        <line num="16" count="9" type="stmt"/>
-        <line num="17" count="9" type="stmt"/>
-        <line num="19" count="9" type="stmt"/>
-        <line num="20" count="9" type="stmt"/>
-        <line num="21" count="9" type="stmt"/>
-        <line num="27" count="9" type="stmt"/>
-        <line num="28" count="9" type="stmt"/>
-        <line num="29" count="9" type="stmt"/>
-        <line num="30" count="9" type="stmt"/>
-        <line num="31" count="9" type="stmt"/>
-        <line num="32" count="9" type="stmt"/>
-        <line num="33" count="9" type="stmt"/>
-        <line num="34" count="9" type="stmt"/>
-        <line num="35" count="9" type="stmt"/>
-        <line num="37" count="9" type="stmt"/>
-        <line num="38" count="1" type="stmt"/>
-        <line num="44" count="9" type="stmt"/>
-        <line num="45" count="9" type="stmt"/>
-        <line num="46" count="9" type="stmt"/>
-        <line num="49" count="9" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.controllers">
-      <metrics statements="199" coveredstatements="117" conditionals="21" coveredconditionals="7" methods="25" coveredmethods="14"/>
-      <file name="auth.controller.js" path="V:\Trabajos_JS\MyTest\src\controllers\auth.controller.js">
-        <metrics statements="17" coveredstatements="15" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
@@ -111,114 +69,135 @@
         <line num="32" count="1" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
-<<<<<<< HEAD
-        <line num="45" count="7" type="stmt"/>
+        <line num="45" count="12" type="stmt"/>
       </file>
       <file name="caso.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\caso.controller.js">
-        <metrics statements="33" coveredstatements="11" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
+        <metrics statements="33" coveredstatements="32" conditionals="6" coveredconditionals="6" methods="4" coveredmethods="4"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
         <line num="4" count="5" type="stmt"/>
         <line num="5" count="5" type="stmt"/>
         <line num="16" count="5" type="stmt"/>
         <line num="17" count="5" type="stmt"/>
         <line num="18" count="5" type="stmt"/>
         <line num="23" count="0" type="stmt"/>
-        <line num="31" count="7" type="stmt"/>
-=======
-        <line num="45" count="9" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="34" count="2" type="stmt"/>
+        <line num="35" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="46" count="12" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="61" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="62" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="72" count="12" type="stmt"/>
+        <line num="73" count="3" type="stmt"/>
+        <line num="74" count="3" type="stmt"/>
+        <line num="75" count="3" type="stmt"/>
+        <line num="76" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="79" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="87" count="12" type="stmt"/>
       </file>
-      <file name="caso.controller.js" path="V:\Trabajos_JS\MyTest\src\controllers\caso.controller.js">
-        <metrics statements="33" coveredstatements="19" conditionals="6" coveredconditionals="0" methods="4" coveredmethods="3"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="16" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="31" count="9" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
+      <file name="image.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\image.controller.js">
+        <metrics statements="28" coveredstatements="21" conditionals="9" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="1" type="cond" truecount="1" falsecount="2"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
         <line num="33" count="0" type="stmt"/>
-        <line num="34" count="0" type="stmt"/>
-        <line num="35" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-<<<<<<< HEAD
-        <line num="46" count="7" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
-=======
-        <line num="46" count="9" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
+        <line num="37" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="1" type="stmt"/>
         <line num="48" count="1" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
-        <line num="60" count="1" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
-        <line num="61" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="67" count="0" type="stmt"/>
-<<<<<<< HEAD
-        <line num="72" count="7" type="stmt"/>
-        <line num="73" count="0" type="stmt"/>
-        <line num="74" count="0" type="stmt"/>
-        <line num="75" count="0" type="stmt"/>
-        <line num="76" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="77" count="0" type="stmt"/>
-        <line num="79" count="0" type="stmt"/>
-        <line num="83" count="0" type="stmt"/>
-        <line num="87" count="7" type="stmt"/>
+        <line num="51" count="1" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="57" count="12" type="stmt"/>
       </file>
       <file name="manage.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\manage.controller.js">
-        <metrics statements="19" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
+        <metrics statements="23" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
         <line num="9" count="0" type="stmt"/>
         <line num="10" count="0" type="stmt"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="23" count="7" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="38" count="7" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="29" count="12" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="44" count="12" type="stmt"/>
+      </file>
+      <file name="pdf.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\pdf.controller.js">
+        <metrics statements="8" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
       </file>
       <file name="permiso.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\permiso.controller.js">
-        <metrics statements="9" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="3" type="stmt"/>
-        <line num="5" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="22" count="7" type="stmt"/>
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="5" count="4" type="stmt"/>
+        <line num="8" count="4" type="stmt"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
       </file>
       <file name="permisoUsuario.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\permisoUsuario.controller.js">
-        <metrics statements="22" coveredstatements="5" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
+        <metrics statements="22" coveredstatements="13" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="2"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="2" type="stmt"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="23" count="7" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="26" count="0" type="stmt"/>
@@ -227,151 +206,59 @@
         <line num="29" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
-        <line num="40" count="7" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="42" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="48" count="7" type="stmt"/>
-      </file>
-      <file name="project.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\project.controller.js">
-        <metrics statements="30" coveredstatements="6" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-=======
-        <line num="72" count="9" type="stmt"/>
-        <line num="73" count="3" type="stmt"/>
-        <line num="74" count="3" type="stmt"/>
-        <line num="75" count="3" type="stmt"/>
-        <line num="76" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="77" count="0" type="stmt"/>
-        <line num="79" count="0" type="stmt"/>
-        <line num="83" count="3" type="stmt"/>
-        <line num="87" count="9" type="stmt"/>
-      </file>
-      <file name="image.controller.js" path="V:\Trabajos_JS\MyTest\src\controllers\image.controller.js">
-        <metrics statements="28" coveredstatements="21" conditionals="9" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="9" count="9" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="14" count="1" type="cond" truecount="1" falsecount="2"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="cond" truecount="1" falsecount="1"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="40" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="40" count="12" type="stmt"/>
         <line num="41" count="1" type="stmt"/>
         <line num="42" count="1" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="47" count="1" type="stmt"/>
-        <line num="48" count="1" type="stmt"/>
-        <line num="49" count="1" type="stmt"/>
-        <line num="51" count="1" type="stmt"/>
-        <line num="54" count="1" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="60" count="9" type="stmt"/>
+        <line num="48" count="12" type="stmt"/>
       </file>
-      <file name="manage.controller.js" path="V:\Trabajos_JS\MyTest\src\controllers\manage.controller.js">
-        <metrics statements="19" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
+      <file name="project.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\project.controller.js">
+        <metrics statements="30" coveredstatements="24" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
-        <line num="12" count="1" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="23" count="9" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="27" count="1" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="38" count="9" type="stmt"/>
-      </file>
-      <file name="pdf.controller.js" path="V:\Trabajos_JS\MyTest\src\controllers\pdf.controller.js">
-        <metrics statements="8" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="17" count="9" type="stmt"/>
-      </file>
-      <file name="project.controller.js" path="V:\Trabajos_JS\MyTest\src\controllers\project.controller.js">
-        <metrics statements="30" coveredstatements="14" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="2"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
-        <line num="4" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-<<<<<<< HEAD
-        <line num="19" count="7" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="36" count="7" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-=======
-        <line num="19" count="9" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="19" count="12" type="stmt"/>
+        <line num="20" count="3" type="stmt"/>
+        <line num="22" count="3" type="stmt"/>
+        <line num="23" count="3" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
         <line num="30" count="0" type="stmt"/>
         <line num="31" count="0" type="stmt"/>
-        <line num="37" count="9" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
-        <line num="39" count="0" type="stmt"/>
-        <line num="40" count="0" type="stmt"/>
-        <line num="41" count="0" type="stmt"/>
-        <line num="43" count="0" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="43" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
         <line num="49" count="0" type="stmt"/>
         <line num="50" count="0" type="stmt"/>
-        <line num="56" count="9" type="stmt"/>
+        <line num="56" count="12" type="stmt"/>
         <line num="57" count="1" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
         <line num="60" count="1" type="stmt"/>
         <line num="61" count="1" type="stmt"/>
         <line num="66" count="0" type="stmt"/>
         <line num="67" count="0" type="stmt"/>
-        <line num="73" count="9" type="stmt"/>
+        <line num="73" count="12" type="stmt"/>
       </file>
-      <file name="report.controller.js" path="V:\Trabajos_JS\MyTest\src\controllers\report.controller.js">
+      <file name="report.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\report.controller.js">
         <metrics statements="27" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
         <line num="12" count="3" type="stmt"/>
         <line num="13" count="3" type="stmt"/>
         <line num="18" count="0" type="stmt"/>
         <line num="19" count="0" type="stmt"/>
-        <line num="25" count="9" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
         <line num="26" count="1" type="stmt"/>
         <line num="27" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
@@ -379,69 +266,33 @@
         <line num="31" count="1" type="stmt"/>
         <line num="35" count="0" type="stmt"/>
         <line num="36" count="0" type="stmt"/>
-        <line num="42" count="9" type="stmt"/>
+        <line num="42" count="12" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
         <line num="45" count="1" type="stmt"/>
         <line num="46" count="1" type="stmt"/>
         <line num="47" count="1" type="stmt"/>
         <line num="51" count="0" type="stmt"/>
         <line num="52" count="0" type="stmt"/>
-        <line num="58" count="9" type="stmt"/>
-      </file>
-      <file name="testResult.controller.js" path="V:\Trabajos_JS\MyTest\src\controllers\testResult.controller.js">
-        <metrics statements="27" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="26" count="9" type="stmt"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="33" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="0" type="stmt"/>
-        <line num="44" count="9" type="stmt"/>
-        <line num="45" count="0" type="stmt"/>
-        <line num="47" count="0" type="stmt"/>
-        <line num="48" count="0" type="stmt"/>
-        <line num="49" count="0" type="stmt"/>
-<<<<<<< HEAD
-        <line num="55" count="7" type="stmt"/>
-        <line num="56" count="0" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="60" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="66" count="0" type="stmt"/>
-        <line num="72" count="7" type="stmt"/>
+        <line num="58" count="12" type="stmt"/>
       </file>
       <file name="seguimiento.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\seguimiento.controller.js">
         <metrics statements="33" coveredstatements="25" conditionals="6" coveredconditionals="4" methods="4" coveredmethods="3"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="10" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="12" count="2" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="25" count="7" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
         <line num="27" count="2" type="stmt"/>
         <line num="28" count="2" type="stmt"/>
         <line num="29" count="2" type="cond" truecount="2" falsecount="0"/>
         <line num="30" count="1" type="stmt"/>
         <line num="34" count="1" type="stmt"/>
         <line num="35" count="1" type="stmt"/>
-        <line num="40" count="7" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
         <line num="41" count="2" type="stmt"/>
         <line num="42" count="2" type="stmt"/>
         <line num="43" count="2" type="stmt"/>
@@ -450,7 +301,7 @@
         <line num="50" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
         <line num="55" count="1" type="stmt"/>
-        <line num="60" count="7" type="stmt"/>
+        <line num="60" count="12" type="stmt"/>
         <line num="61" count="0" type="stmt"/>
         <line num="62" count="0" type="stmt"/>
         <line num="63" count="0" type="stmt"/>
@@ -458,12 +309,42 @@
         <line num="65" count="0" type="stmt"/>
         <line num="67" count="0" type="stmt"/>
         <line num="71" count="0" type="stmt"/>
-        <line num="75" count="7" type="stmt"/>
+        <line num="75" count="12" type="stmt"/>
+      </file>
+      <file name="testResult.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\testResult.controller.js">
+        <metrics statements="27" coveredstatements="21" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="13" count="3" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="26" count="12" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="44" count="12" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="49" count="1" type="stmt"/>
+        <line num="54" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="61" count="12" type="stmt"/>
       </file>
       <file name="user.controller.js" path="C:\Users\Usuario\Desktop\MyTest\src\controllers\user.controller.js">
         <metrics statements="10" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
         <line num="4" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="7" count="1" type="stmt"/>
@@ -471,613 +352,352 @@
         <line num="9" count="1" type="stmt"/>
         <line num="13" count="0" type="stmt"/>
         <line num="14" count="0" type="stmt"/>
-        <line num="20" count="7" type="stmt"/>
-=======
-        <line num="54" count="0" type="stmt"/>
-        <line num="55" count="0" type="stmt"/>
-        <line num="61" count="9" type="stmt"/>
-      </file>
-      <file name="user.controller.js" path="V:\Trabajos_JS\MyTest\src\controllers\user.controller.js">
-        <metrics statements="10" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="20" count="9" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
+        <line num="20" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.database">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="connection.js" path="V:\Trabajos_JS\MyTest\src\database\connection.js">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-<<<<<<< HEAD
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="connection.js" path="C:\Users\Usuario\Desktop\MyTest\src\database\connection.js">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="20" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.database.models">
-      <metrics statements="40" coveredstatements="40" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="52" coveredstatements="52" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="CasoPrueba.js" path="C:\Users\Usuario\Desktop\MyTest\src\database\models\CasoPrueba.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="53" count="7" type="stmt"/>
-        <line num="55" count="7" type="stmt"/>
-=======
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="16" count="9" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="53" count="12" type="stmt"/>
+        <line num="55" count="12" type="stmt"/>
       </file>
-    </package>
-    <package name="src.database.models">
-      <metrics statements="34" coveredstatements="34" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="CasoPrueba.js" path="V:\Trabajos_JS\MyTest\src\database\models\CasoPrueba.js">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="53" count="9" type="stmt"/>
-        <line num="55" count="9" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
-      </file>
-      <file name="Gestiona.js" path="V:\Trabajos_JS\MyTest\src\database\models\Gestiona.js">
+      <file name="Gestiona.js" path="C:\Users\Usuario\Desktop\MyTest\src\database\models\Gestiona.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-<<<<<<< HEAD
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="32" count="7" type="stmt"/>
-        <line num="33" count="7" type="stmt"/>
-        <line num="35" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+      </file>
+      <file name="Informe.js" path="C:\Users\Usuario\Desktop\MyTest\src\database\models\Informe.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+        <line num="37" count="12" type="stmt"/>
       </file>
       <file name="Permiso.js" path="C:\Users\Usuario\Desktop\MyTest\src\database\models\Permiso.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="22" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
       </file>
       <file name="PermisoUsuario.js" path="C:\Users\Usuario\Desktop\MyTest\src\database\models\PermisoUsuario.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="32" count="7" type="stmt"/>
-        <line num="33" count="7" type="stmt"/>
-        <line num="35" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
       </file>
       <file name="Proyecto.js" path="C:\Users\Usuario\Desktop\MyTest\src\database\models\Proyecto.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="21" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
+      </file>
+      <file name="ResultadoPrueba.js" path="C:\Users\Usuario\Desktop\MyTest\src\database\models\ResultadoPrueba.js">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="41" count="12" type="stmt"/>
+        <line num="43" count="12" type="stmt"/>
       </file>
       <file name="SeguimientoError.js" path="C:\Users\Usuario\Desktop\MyTest\src\database\models\SeguimientoError.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="33" count="7" type="stmt"/>
-        <line num="35" count="7" type="stmt"/>
-=======
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="32" count="9" type="stmt"/>
-        <line num="33" count="9" type="stmt"/>
-        <line num="35" count="9" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
       </file>
-      <file name="Informe.js" path="V:\Trabajos_JS\MyTest\src\database\models\Informe.js">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="35" count="9" type="stmt"/>
-        <line num="37" count="9" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
-      </file>
-      <file name="Proyecto.js" path="V:\Trabajos_JS\MyTest\src\database\models\Proyecto.js">
+      <file name="Usuario.js" path="C:\Users\Usuario\Desktop\MyTest\src\database\models\Usuario.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-<<<<<<< HEAD
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="38" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="38" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.helpers">
-      <metrics statements="33" coveredstatements="26" conditionals="7" coveredconditionals="3" methods="7" coveredmethods="5"/>
-      <file name="db-validators.js" path="C:\Users\Usuario\Desktop\MyTest\src\helpers\db-validators.js">
-        <metrics statements="21" coveredstatements="15" conditionals="7" coveredconditionals="3" methods="5" coveredmethods="3"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="7" count="15" type="stmt"/>
-        <line num="8" count="14" type="stmt"/>
-        <line num="11" count="7" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="18" count="7" type="cond" truecount="1" falsecount="0"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="25" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="30" count="7" type="stmt"/>
-        <line num="31" count="3" type="stmt"/>
-        <line num="36" count="3" type="stmt"/>
-        <line num="43" count="7" type="stmt"/>
-        <line num="44" count="0" type="stmt"/>
-        <line num="45" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="46" count="0" type="stmt"/>
-        <line num="52" count="7" type="stmt"/>
-=======
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="21" count="9" type="stmt"/>
-      </file>
-      <file name="ResultadoPrueba.js" path="V:\Trabajos_JS\MyTest\src\database\models\ResultadoPrueba.js">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="41" count="9" type="stmt"/>
-        <line num="43" count="9" type="stmt"/>
-      </file>
-      <file name="Usuario.js" path="V:\Trabajos_JS\MyTest\src\database\models\Usuario.js">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="38" count="9" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.helpers">
-      <metrics statements="55" coveredstatements="44" conditionals="15" coveredconditionals="8" methods="12" coveredmethods="9"/>
-      <file name="allowedCollections.js" path="V:\Trabajos_JS\MyTest\src\helpers\allowedCollections.js">
+      <metrics statements="55" coveredstatements="49" conditionals="15" coveredconditionals="12" methods="12" coveredmethods="10"/>
+      <file name="allowedCollections.js" path="C:\Users\Usuario\Desktop\MyTest\src\helpers\allowedCollections.js">
         <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="9" type="cond" truecount="0" falsecount="2"/>
+        <line num="1" count="12" type="cond" truecount="0" falsecount="2"/>
         <line num="2" count="3" type="stmt"/>
         <line num="3" count="3" type="cond" truecount="2" falsecount="0"/>
         <line num="4" count="2" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="9" count="9" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
+        <line num="9" count="12" type="stmt"/>
       </file>
-      <file name="db-validators.js" path="V:\Trabajos_JS\MyTest\src\helpers\db-validators.js">
-        <metrics statements="37" coveredstatements="27" conditionals="11" coveredconditionals="6" methods="9" coveredmethods="6"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="9" count="24" type="stmt"/>
-        <line num="10" count="16" type="stmt"/>
-        <line num="13" count="9" type="stmt"/>
+      <file name="db-validators.js" path="C:\Users\Usuario\Desktop\MyTest\src\helpers\db-validators.js">
+        <metrics statements="37" coveredstatements="32" conditionals="11" coveredconditionals="10" methods="9" coveredmethods="7"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="44" type="stmt"/>
+        <line num="10" count="44" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
         <line num="15" count="2" type="cond" truecount="1" falsecount="1"/>
         <line num="16" count="0" type="stmt"/>
-        <line num="20" count="9" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="12" type="cond" truecount="1" falsecount="0"/>
         <line num="21" count="3" type="stmt"/>
-        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="28" count="0" type="stmt"/>
-        <line num="32" count="9" type="stmt"/>
+        <line num="27" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
         <line num="33" count="3" type="stmt"/>
         <line num="38" count="3" type="stmt"/>
-        <line num="45" count="9" type="stmt"/>
-        <line num="46" count="5" type="stmt"/>
-        <line num="47" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="45" count="12" type="stmt"/>
+        <line num="46" count="7" type="stmt"/>
+        <line num="47" count="7" type="cond" truecount="2" falsecount="0"/>
         <line num="48" count="2" type="stmt"/>
-        <line num="55" count="9" type="stmt"/>
+        <line num="55" count="12" type="stmt"/>
         <line num="56" count="0" type="stmt"/>
         <line num="57" count="0" type="stmt"/>
-        <line num="60" count="9" type="stmt"/>
-        <line num="61" count="0" type="stmt"/>
-        <line num="62" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="63" count="0" type="stmt"/>
-        <line num="70" count="9" type="stmt"/>
+        <line num="60" count="12" type="stmt"/>
+        <line num="61" count="5" type="stmt"/>
+        <line num="62" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="63" count="2" type="stmt"/>
+        <line num="70" count="12" type="stmt"/>
         <line num="71" count="5" type="stmt"/>
         <line num="72" count="5" type="cond" truecount="2" falsecount="0"/>
         <line num="73" count="2" type="stmt"/>
-        <line num="77" count="9" type="stmt"/>
+        <line num="77" count="12" type="stmt"/>
         <line num="78" count="0" type="stmt"/>
         <line num="79" count="0" type="stmt"/>
-        <line num="83" count="9" type="stmt"/>
+        <line num="83" count="12" type="stmt"/>
       </file>
-      <file name="generateToken.js" path="V:\Trabajos_JS\MyTest\src\helpers\generateToken.js">
+      <file name="generateToken.js" path="C:\Users\Usuario\Desktop\MyTest\src\helpers\generateToken.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-<<<<<<< HEAD
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
         <line num="5" count="1" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
-        <line num="21" count="7" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
       </file>
       <file name="verify-jwt.js" path="C:\Users\Usuario\Desktop\MyTest\src\helpers\verify-jwt.js">
         <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="15" type="stmt"/>
-        <line num="5" count="15" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="43" type="stmt"/>
+        <line num="5" count="43" type="stmt"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="11" count="7" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.middlewares">
-      <metrics statements="48" coveredstatements="38" conditionals="16" coveredconditionals="7" methods="8" coveredmethods="6"/>
+      <metrics statements="54" coveredstatements="36" conditionals="22" coveredconditionals="12" methods="9" coveredmethods="6"/>
       <file name="auth.js" path="C:\Users\Usuario\Desktop\MyTest\src\middlewares\auth.js">
-        <metrics statements="22" coveredstatements="19" conditionals="6" coveredconditionals="3" methods="2" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="15" type="stmt"/>
-        <line num="7" count="15" type="stmt"/>
-        <line num="8" count="15" type="stmt"/>
-        <line num="9" count="15" type="stmt"/>
-        <line num="10" count="14" type="cond" truecount="1" falsecount="1"/>
+        <metrics statements="22" coveredstatements="16" conditionals="6" coveredconditionals="3" methods="2" coveredmethods="2"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="43" type="stmt"/>
+        <line num="7" count="43" type="stmt"/>
+        <line num="8" count="43" type="stmt"/>
+        <line num="9" count="43" type="stmt"/>
+        <line num="10" count="43" type="cond" truecount="1" falsecount="1"/>
         <line num="11" count="0" type="stmt"/>
-        <line num="15" count="14" type="cond" truecount="1" falsecount="1"/>
-        <line num="16" count="14" type="stmt"/>
-        <line num="17" count="14" type="stmt"/>
-        <line num="18" count="14" type="stmt"/>
-        <line num="21" count="14" type="stmt"/>
-        <line num="22" count="14" type="stmt"/>
+        <line num="15" count="43" type="cond" truecount="1" falsecount="1"/>
+        <line num="16" count="43" type="stmt"/>
+        <line num="17" count="43" type="stmt"/>
+        <line num="18" count="43" type="stmt"/>
+        <line num="21" count="43" type="stmt"/>
+        <line num="22" count="43" type="stmt"/>
         <line num="24" count="0" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="29" count="1" type="stmt"/>
-        <line num="30" count="1" type="stmt"/>
-        <line num="34" count="7" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="29" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="34" count="12" type="stmt"/>
       </file>
       <file name="validate-fields.js" path="C:\Users\Usuario\Desktop\MyTest\src\middlewares\validate-fields.js">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="7" count="8" type="stmt"/>
-        <line num="8" count="8" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="14" count="7" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="7" count="34" type="stmt"/>
+        <line num="8" count="34" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="11" count="22" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
       </file>
       <file name="validate-rol.js" path="C:\Users\Usuario\Desktop\MyTest\src\middlewares\validate-rol.js">
-        <metrics statements="8" coveredstatements="3" conditionals="4" coveredconditionals="0" methods="2" coveredmethods="1"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="35" type="stmt"/>
-        <line num="5" count="0" type="cond" truecount="0" falsecount="2"/>
+        <metrics statements="8" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="132" type="stmt"/>
+        <line num="5" count="23" type="cond" truecount="1" falsecount="1"/>
         <line num="6" count="0" type="stmt"/>
-        <line num="11" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="11" count="23" type="cond" truecount="1" falsecount="1"/>
         <line num="12" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="21" count="7" type="stmt"/>
+        <line num="17" count="23" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
       </file>
       <file name="verificarPermisos.js" path="C:\Users\Usuario\Desktop\MyTest\src\middlewares\verificarPermisos.js">
-        <metrics statements="11" coveredstatements="9" conditionals="4" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="2" count="21" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="7" type="cond" truecount="1" falsecount="1"/>
+        <metrics statements="11" coveredstatements="1" conditionals="4" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="7" count="0" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
-        <line num="13" count="7" type="cond" truecount="1" falsecount="1"/>
-        <line num="14" count="7" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="13" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="14" count="0" type="stmt"/>
         <line num="17" count="0" type="stmt"/>
-        <line num="21" count="7" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
+      </file>
+      <file name="verify-file.js" path="C:\Users\Usuario\Desktop\MyTest\src\middlewares\verify-file.js">
+        <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="4" count="12" type="cond" truecount="0" falsecount="1"/>
+        <line num="5" count="4" type="cond" truecount="5" falsecount="0"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.services">
-      <metrics statements="90" coveredstatements="58" conditionals="0" coveredconditionals="0" methods="22" coveredmethods="8"/>
+      <metrics statements="147" coveredstatements="124" conditionals="0" coveredconditionals="0" methods="38" coveredmethods="29"/>
       <file name="caso.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\caso.service.js">
-        <metrics statements="17" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
+        <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
         <line num="3" count="5" type="stmt"/>
         <line num="4" count="5" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="25" count="7" type="stmt"/>
-        <line num="26" count="0" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="30" count="7" type="stmt"/>
-        <line num="31" count="0" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="39" count="7" type="stmt"/>
-      </file>
-      <file name="manage.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\manage.service.js">
-        <metrics statements="15" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="15" count="7" type="stmt"/>
-        <line num="16" count="0" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="22" count="7" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="32" count="7" type="stmt"/>
-      </file>
-      <file name="permiso.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\permiso.service.js">
-        <metrics statements="5" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-      </file>
-      <file name="permisoUsuario.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\permisoUsuario.service.js">
-        <metrics statements="12" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="9" count="14" type="stmt"/>
-        <line num="20" count="14" type="stmt"/>
-        <line num="23" count="7" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="33" count="7" type="stmt"/>
-      </file>
-      <file name="proyect.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\proyect.service.js">
-        <metrics statements="15" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="10" count="0" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="14" count="7" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="23" count="7" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="32" count="7" type="stmt"/>
-      </file>
-      <file name="seguimiento.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\seguimiento.service.js">
-        <metrics statements="17" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
         <line num="8" count="1" type="stmt"/>
         <line num="13" count="1" type="stmt"/>
-        <line num="16" count="7" type="stmt"/>
-        <line num="17" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="22" count="7" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="28" count="1" type="stmt"/>
-        <line num="31" count="7" type="stmt"/>
-        <line num="32" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="40" count="7" type="stmt"/>
-      </file>
-      <file name="user.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\user.service.js">
-        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="12" count="7" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.v1.routes">
-      <metrics statements="72" coveredstatements="72" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="auth.routes.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\auth.routes.js">
-        <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
-        <line num="19" count="7" type="stmt"/>
-      </file>
-      <file name="caso.route.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\caso.route.js">
-        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="9" count="7" type="stmt"/>
-        <line num="12" count="7" type="stmt"/>
-=======
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="6" count="1" type="stmt"/>
-        <line num="21" count="9" type="stmt"/>
-      </file>
-      <file name="verify-jwt.js" path="V:\Trabajos_JS\MyTest\src\helpers\verify-jwt.js">
-        <metrics statements="6" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="23" type="stmt"/>
-        <line num="5" count="23" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="11" count="9" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.middlewares">
-      <metrics statements="40" coveredstatements="35" conditionals="16" coveredconditionals="11" methods="5" coveredmethods="5"/>
-      <file name="auth.js" path="V:\Trabajos_JS\MyTest\src\middlewares\auth.js">
-        <metrics statements="19" coveredstatements="16" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="23" type="stmt"/>
-        <line num="6" count="23" type="stmt"/>
-        <line num="7" count="23" type="stmt"/>
-        <line num="8" count="23" type="stmt"/>
-        <line num="9" count="23" type="stmt"/>
-        <line num="10" count="15" type="cond" truecount="1" falsecount="1"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="15" count="15" type="cond" truecount="1" falsecount="1"/>
-        <line num="21" count="15" type="stmt"/>
-        <line num="22" count="15" type="stmt"/>
-        <line num="24" count="0" type="stmt"/>
-        <line num="25" count="0" type="stmt"/>
-        <line num="28" count="8" type="stmt"/>
-        <line num="29" count="8" type="stmt"/>
-        <line num="30" count="8" type="stmt"/>
-        <line num="34" count="9" type="stmt"/>
-      </file>
-      <file name="validate-fields.js" path="V:\Trabajos_JS\MyTest\src\middlewares\validate-fields.js">
-        <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="7" count="24" type="stmt"/>
-        <line num="8" count="24" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="11" type="stmt"/>
-        <line num="11" count="13" type="stmt"/>
-        <line num="14" count="9" type="stmt"/>
-      </file>
-      <file name="validate-rol.js" path="V:\Trabajos_JS\MyTest\src\middlewares\validate-rol.js">
-        <metrics statements="8" coveredstatements="6" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="2"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="99" type="stmt"/>
-        <line num="5" count="13" type="cond" truecount="1" falsecount="1"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="11" count="13" type="cond" truecount="1" falsecount="1"/>
-        <line num="12" count="0" type="stmt"/>
-        <line num="17" count="13" type="stmt"/>
-        <line num="21" count="9" type="stmt"/>
-      </file>
-      <file name="verify-file.js" path="V:\Trabajos_JS\MyTest\src\middlewares\verify-file.js">
-        <metrics statements="6" coveredstatements="6" conditionals="6" coveredconditionals="5" methods="1" coveredmethods="1"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="4" count="9" type="cond" truecount="0" falsecount="1"/>
-        <line num="7" count="4" type="cond" truecount="5" falsecount="0"/>
-        <line num="8" count="1" type="stmt"/>
-        <line num="13" count="3" type="stmt"/>
-        <line num="18" count="9" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.services">
-      <metrics statements="110" coveredstatements="66" conditionals="0" coveredconditionals="0" methods="28" coveredmethods="12"/>
-      <file name="caso.service.js" path="V:\Trabajos_JS\MyTest\src\services\caso.service.js">
-        <metrics statements="17" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="3"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="13" count="0" type="stmt"/>
-        <line num="16" count="9" type="stmt"/>
-        <line num="17" count="0" type="stmt"/>
-        <line num="22" count="0" type="stmt"/>
-        <line num="25" count="9" type="stmt"/>
-        <line num="26" count="1" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
-        <line num="30" count="9" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+        <line num="27" count="4" type="stmt"/>
+        <line num="30" count="12" type="stmt"/>
         <line num="31" count="3" type="stmt"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="39" count="9" type="stmt"/>
+        <line num="36" count="2" type="stmt"/>
+        <line num="39" count="12" type="stmt"/>
       </file>
-      <file name="manage.service.js" path="V:\Trabajos_JS\MyTest\src\services\manage.service.js">
-        <metrics statements="14" coveredstatements="14" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
+      <file name="manage.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\manage.service.js">
+        <metrics statements="17" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="3"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
         <line num="6" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="15" count="9" type="stmt"/>
-        <line num="16" count="1" type="stmt"/>
-        <line num="17" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
-        <line num="21" count="9" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="31" count="9" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="41" count="12" type="stmt"/>
       </file>
-      <file name="project.service.js" path="V:\Trabajos_JS\MyTest\src\services\project.service.js">
-        <metrics statements="15" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="2"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="0" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="14" count="9" type="stmt"/>
-        <line num="15" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="23" count="9" type="stmt"/>
+      <file name="permiso.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\permiso.service.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+      </file>
+      <file name="permisoUsuario.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\permisoUsuario.service.js">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="43" type="stmt"/>
+        <line num="20" count="43" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
         <line num="24" count="1" type="stmt"/>
         <line num="29" count="1" type="stmt"/>
-        <line num="32" count="9" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
       </file>
-      <file name="report.service.js" path="V:\Trabajos_JS\MyTest\src\services\report.service.js">
+      <file name="project.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\project.service.js">
+        <metrics statements="15" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="32" count="12" type="stmt"/>
+      </file>
+      <file name="report.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\report.service.js">
         <metrics statements="39" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="11" coveredmethods="4"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="9" count="9" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
         <line num="12" count="3" type="stmt"/>
-        <line num="15" count="9" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
-        <line num="22" count="9" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
         <line num="23" count="1" type="stmt"/>
         <line num="28" count="1" type="stmt"/>
-        <line num="31" count="9" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
         <line num="32" count="1" type="stmt"/>
         <line num="37" count="1" type="stmt"/>
-        <line num="40" count="9" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
         <line num="41" count="0" type="stmt"/>
         <line num="42" count="0" type="stmt"/>
         <line num="43" count="0" type="stmt"/>
@@ -1097,234 +717,214 @@
         <line num="83" count="0" type="stmt"/>
         <line num="84" count="0" type="stmt"/>
         <line num="87" count="0" type="stmt"/>
-        <line num="90" count="9" type="stmt"/>
+        <line num="90" count="12" type="stmt"/>
       </file>
-      <file name="testResult.service.js" path="V:\Trabajos_JS\MyTest\src\services\testResult.service.js">
-        <metrics statements="16" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="11" count="0" type="stmt"/>
-        <line num="14" count="0" type="stmt"/>
-        <line num="17" count="9" type="stmt"/>
-        <line num="18" count="0" type="stmt"/>
-        <line num="23" count="0" type="stmt"/>
-        <line num="26" count="9" type="stmt"/>
-        <line num="27" count="0" type="stmt"/>
+      <file name="seguimiento.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\seguimiento.service.js">
+        <metrics statements="17" coveredstatements="15" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="4" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="31" count="12" type="stmt"/>
         <line num="32" count="0" type="stmt"/>
-        <line num="35" count="9" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="40" count="12" type="stmt"/>
       </file>
-      <file name="user.service.js" path="V:\Trabajos_JS\MyTest\src\services\user.service.js">
-        <metrics statements="9" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
-        <line num="8" count="0" type="stmt"/>
-        <line num="9" count="0" type="stmt"/>
-        <line num="12" count="9" type="stmt"/>
+      <file name="testResult.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\testResult.service.js">
+        <metrics statements="16" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="26" count="12" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+      </file>
+      <file name="user.service.js" path="C:\Users\Usuario\Desktop\MyTest\src\services\user.service.js">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
       </file>
     </package>
     <package name="src.v1.routes">
-      <metrics statements="92" coveredstatements="92" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="auth.routes.js" path="V:\Trabajos_JS\MyTest\src\v1\routes\auth.routes.js">
+      <metrics statements="117" coveredstatements="117" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="auth.routes.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\auth.routes.js">
         <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="19" count="9" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="19" count="12" type="stmt"/>
       </file>
-      <file name="caso.route.js" path="V:\Trabajos_JS\MyTest\src\v1\routes\caso.route.js">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="11" count="9" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
+      <file name="caso.route.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\caso.route.js">
+        <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
       </file>
-      <file name="image.routes.js" path="V:\Trabajos_JS\MyTest\src\v1\routes\image.routes.js">
+      <file name="image.routes.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\image.routes.js">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="9" count="9" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
         <line num="11" count="3" type="stmt"/>
-        <line num="15" count="9" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
       </file>
-      <file name="manage.routes.js" path="V:\Trabajos_JS\MyTest\src\v1\routes\manage.routes.js">
-        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-<<<<<<< HEAD
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="11" count="7" type="stmt"/>
-        <line num="13" count="7" type="stmt"/>
-        <line num="17" count="7" type="stmt"/>
-        <line num="27" count="7" type="stmt"/>
-        <line num="35" count="7" type="stmt"/>
+      <file name="manage.routes.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\manage.routes.js">
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="23" count="12" type="stmt"/>
+        <line num="33" count="12" type="stmt"/>
+        <line num="41" count="12" type="stmt"/>
+      </file>
+      <file name="pdf.routes.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\pdf.routes.js">
+        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
       </file>
       <file name="permiso.route.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\permiso.route.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
       </file>
       <file name="permisoUsuario.route.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\permisoUsuario.route.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
       </file>
       <file name="project.routes.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\project.routes.js">
         <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="10" count="7" type="stmt"/>
-        <line num="14" count="7" type="stmt"/>
-        <line num="21" count="7" type="stmt"/>
-        <line num="28" count="7" type="stmt"/>
-        <line num="35" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="14" count="12" type="stmt"/>
+        <line num="21" count="12" type="stmt"/>
+        <line num="28" count="12" type="stmt"/>
+        <line num="35" count="12" type="stmt"/>
+      </file>
+      <file name="report.routes.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\report.routes.js">
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="29" count="12" type="stmt"/>
+        <line num="36" count="12" type="stmt"/>
       </file>
       <file name="seguimiento.routes.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\seguimiento.routes.js">
         <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="2" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="4" count="7" type="stmt"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="6" count="7" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="8" count="7" type="stmt"/>
-        <line num="9" count="7" type="stmt"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+        <line num="9" count="12" type="stmt"/>
+      </file>
+      <file name="testResult.routes.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\testResult.routes.js">
+        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="1" count="12" type="stmt"/>
+        <line num="2" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="4" count="12" type="stmt"/>
+        <line num="5" count="12" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="10" count="12" type="stmt"/>
+        <line num="12" count="12" type="stmt"/>
+        <line num="16" count="12" type="stmt"/>
+        <line num="22" count="12" type="stmt"/>
+        <line num="29" count="12" type="stmt"/>
+        <line num="36" count="12" type="stmt"/>
       </file>
       <file name="user.routes.js" path="C:\Users\Usuario\Desktop\MyTest\src\v1\routes\user.routes.js">
         <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="7" type="stmt"/>
-        <line num="3" count="7" type="stmt"/>
-        <line num="7" count="7" type="stmt"/>
-        <line num="11" count="7" type="stmt"/>
-        <line num="13" count="7" type="stmt"/>
-        <line num="15" count="7" type="stmt"/>
-        <line num="17" count="7" type="stmt"/>
-        <line num="30" count="7" type="stmt"/>
-=======
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="11" count="9" type="stmt"/>
-        <line num="13" count="9" type="stmt"/>
-        <line num="17" count="9" type="stmt"/>
-        <line num="27" count="9" type="stmt"/>
-        <line num="35" count="9" type="stmt"/>
-      </file>
-      <file name="pdf.routes.js" path="V:\Trabajos_JS\MyTest\src\v1\routes\pdf.routes.js">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="15" count="9" type="stmt"/>
-      </file>
-      <file name="project.routes.js" path="V:\Trabajos_JS\MyTest\src\v1\routes\project.routes.js">
-        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="8" count="9" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="14" count="9" type="stmt"/>
-        <line num="21" count="9" type="stmt"/>
-        <line num="28" count="9" type="stmt"/>
-        <line num="35" count="9" type="stmt"/>
-      </file>
-      <file name="report.routes.js" path="V:\Trabajos_JS\MyTest\src\v1\routes\report.routes.js">
-        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="12" count="9" type="stmt"/>
-        <line num="16" count="9" type="stmt"/>
-        <line num="22" count="9" type="stmt"/>
-        <line num="29" count="9" type="stmt"/>
-        <line num="36" count="9" type="stmt"/>
-      </file>
-      <file name="testResult.routes.js" path="V:\Trabajos_JS\MyTest\src\v1\routes\testResult.routes.js">
-        <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="2" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
-        <line num="5" count="9" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="10" count="9" type="stmt"/>
-        <line num="12" count="9" type="stmt"/>
-        <line num="16" count="9" type="stmt"/>
-        <line num="22" count="9" type="stmt"/>
-        <line num="29" count="9" type="stmt"/>
-        <line num="36" count="9" type="stmt"/>
-      </file>
-      <file name="user.routes.js" path="V:\Trabajos_JS\MyTest\src\v1\routes\user.routes.js">
-        <metrics statements="8" coveredstatements="8" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="9" type="stmt"/>
-        <line num="3" count="9" type="stmt"/>
-        <line num="7" count="9" type="stmt"/>
-        <line num="11" count="9" type="stmt"/>
-        <line num="13" count="9" type="stmt"/>
-        <line num="15" count="9" type="stmt"/>
-        <line num="17" count="9" type="stmt"/>
-        <line num="30" count="9" type="stmt"/>
->>>>>>> b80614c5b9a1d928c4a9dd3ebf6d5f3c8ba095ec
+        <line num="1" count="12" type="stmt"/>
+        <line num="3" count="12" type="stmt"/>
+        <line num="7" count="12" type="stmt"/>
+        <line num="11" count="12" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="15" count="12" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
+        <line num="27" count="12" type="stmt"/>
       </file>
     </package>
   </project>

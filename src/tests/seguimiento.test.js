@@ -13,7 +13,7 @@ describe('Test crear seguimientos de errores', () => {
             .send({
                 error_priorizado: faker.helpers.arrayElement(['Alto', 'Medio', 'Bajo']).toString(),
                 nombre_error: faker.word.words(),
-                caso_de_prueba_id:6
+                caso_de_prueba_id:1
             });
         expect(res.statusCode).toEqual(201);
     });
@@ -37,7 +37,7 @@ describe('Test eliminar seguimiento', () => {
                 fecha_limite: faker.date.future().toISOString().split('T')[0],
                 datos_de_prueba: faker.lorem.sentence(),
                 expectativas: faker.lorem.sentence(),
-                proyecto_id: 2
+                proyecto_id: 1
             });
         casoIdToDelete = res.body.caso;
     });
@@ -91,7 +91,7 @@ describe('Test actualizar seguimientos', () => {
                 fecha_limite: faker.date.future().toISOString().split('T')[0],
                 datos_de_prueba: faker.lorem.sentence(),
                 expectativas: faker.lorem.sentence(),
-                proyecto_id:2
+                proyecto_id:1
             });
         caso = res.body.caso;
     });

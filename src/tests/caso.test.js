@@ -4,6 +4,7 @@ const server = require('../index');
 const app = request(server)
 require('dotenv').config();
 let jwt = process.env.TOKEN
+console.log(jwt);
 
 describe('Test crear casos de prueba', () => {
     it('Post - Caso exitoso', async () => {
@@ -19,16 +20,16 @@ describe('Test crear casos de prueba', () => {
                 fecha_limite: faker.date.future().toISOString().split('T')[0],
                 datos_de_prueba: faker.lorem.sentence(),
                 expectativas: faker.lorem.sentence(),
-                proyecto_id:2
+                proyecto_id:1
             });
         expect(res.statusCode).toEqual(201);
     });
     
 });
 
+
 describe('Test eliminar casos de prueba', () => {
     let casoIdToDelete;
-
     beforeAll(async () => {
         const res = await app
             .post('/v1/caso')
@@ -42,10 +43,8 @@ describe('Test eliminar casos de prueba', () => {
                 fecha_limite: faker.date.future().toISOString().split('T')[0],
                 datos_de_prueba: faker.lorem.sentence(),
                 expectativas: faker.lorem.sentence(),
-                proyecto_id:2
+                proyecto_id:1
             });
-
-
         casoIdToDelete = res.body.caso.id;
     });
 
@@ -53,7 +52,6 @@ describe('Test eliminar casos de prueba', () => {
         const res = await app
             .delete(`/v1/caso/${casoIdToDelete}`)
             .set('Authorization', `Bearer ${jwt}`);
-        
         expect(res.statusCode).toEqual(200);
     });
 
@@ -85,7 +83,7 @@ describe('Test actualizar casos de prueba', () => {
                 fecha_limite: faker.date.future().toISOString().split('T')[0],
                 datos_de_prueba: faker.lorem.sentence(),
                 expectativas: faker.lorem.sentence(),
-                proyecto_id:2
+                proyecto_id:1
             });
         caso = res.body.caso;
     });
@@ -114,7 +112,7 @@ describe('Test actualizar casos de prueba', () => {
 describe('Test obtener casos de prueba', () => {
 
     it('GET - Caso exitoso', async () => {
-        const id = 2;
+        const id = 1;
         const res = await app
             .get(`/v1/caso/${id}`)
             .set('Authorization', `Bearer ${jwt}`)

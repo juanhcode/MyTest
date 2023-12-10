@@ -122,18 +122,12 @@
 <a name='L57'></a><a href='#L57'>57</a>
 <a name='L58'></a><a href='#L58'>58</a>
 <a name='L59'></a><a href='#L59'>59</a>
-<a name='L60'></a><a href='#L60'>60</a>
-<a name='L61'></a><a href='#L61'>61</a>
-<a name='L62'></a><a href='#L62'>62</a>
-<a name='L63'></a><a href='#L63'>63</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L60'></a><a href='#L60'>60</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-yes">9x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -184,13 +178,10 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-yes">12x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const {
-    userByIDExists,
-    testResultByIDExists
-  } = require('../helpers/db-validators')
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const { userByIDExists,testResultByIDExists } = require('../helpers/db-validators')
 &nbsp;
 const cloudinary = require("cloudinary").v2;
 cloudinary.config(process.env.CLOUDINARY_URL);
@@ -198,56 +189,56 @@ cloudinary.config(process.env.CLOUDINARY_URL);
 const updateImageCloudinary = async (req, res) =&gt; {
     try {
         const { id, collection } = req.params;
-          let model;
-      
-          switch ( collection ) {
-              case 'user':
-                  model = await userByIDExists(id);
-                  <span class="missing-if-branch" title="if path not taken" >I</span>if ( !model ) {
-<span class="cstat-no" title="statement not covered" >                      return res.status(400).json({</span>
-                          msg: `No existe un usuario con el id ${ id }`
-                      });
-                  }
-              
-              break;
-      
-<span class="branch-1 cbranch-no" title="branch not covered" >              case 'testResult':</span>
-<span class="cstat-no" title="statement not covered" >                  model = await testResultByIDExists(id);</span>
-<span class="cstat-no" title="statement not covered" >                  if ( !model ) {</span>
-<span class="cstat-no" title="statement not covered" >                      return res.status(400).json({</span>
-                          msg: `No existe resultado de prueba con el id ${ id }`
-                      });
-                  }
-              
-<span class="cstat-no" title="statement not covered" >              break;</span>
-          
-<span class="branch-2 cbranch-no" title="branch not covered" >              default:</span>
-<span class="cstat-no" title="statement not covered" >                  return res.status(500).json({ msg: 'Se me olvidó validar esto'});</span>
-          }
-      
-          // Limpiar imágenes previas
-          <span class="missing-if-branch" title="else path not taken" >E</span>if ( model.foto ) {
-              const arrName = model.foto.split('/');
-              const name    = arrName[ arrName.length - 1 ];
-              const [ public_id ] = name.split('.');
-              cloudinary.uploader.destroy( public_id );
-          }
-      
-          const { tempFilePath } = req.files.file
-          const { secure_url } = await cloudinary.uploader.upload( tempFilePath );
-          model.foto = secure_url;
-      
-          await model.save();
-      
-      
-          res.json( model );
+        let model;
+&nbsp;
+        switch (collection) {
+            case 'user':
+                model = await userByIDExists(id);
+                <span class="missing-if-branch" title="if path not taken" >I</span>if (!model) {
+<span class="cstat-no" title="statement not covered" >                    return res.status(400).json({</span>
+                        msg: `No existe un usuario con el id ${id}`
+                    });
+                }
+&nbsp;
+                break;
+&nbsp;
+<span class="branch-1 cbranch-no" title="branch not covered" >            case 'testResult':</span>
+<span class="cstat-no" title="statement not covered" >                model = await testResultByIDExists(id);</span>
+<span class="cstat-no" title="statement not covered" >                if (!model) {</span>
+<span class="cstat-no" title="statement not covered" >                    return res.status(400).json({</span>
+                        msg: `No existe resultado de prueba con el id ${id}`
+                    });
+                }
+&nbsp;
+<span class="cstat-no" title="statement not covered" >                break;</span>
+&nbsp;
+<span class="branch-2 cbranch-no" title="branch not covered" >            default:</span>
+<span class="cstat-no" title="statement not covered" >                return res.status(500).json({ msg: 'Se me olvidó validar esto' });</span>
+        }
+&nbsp;
+        // Limpiar imágenes previas
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (model.foto) {
+            const arrName = model.foto.split('/');
+            const name = arrName[arrName.length - 1];
+            const [public_id] = name.split('.');
+            cloudinary.uploader.destroy(public_id);
+        }
+&nbsp;
+        const { tempFilePath } = req.files.file
+        const { secure_url } = await cloudinary.uploader.upload(tempFilePath);
+        model.foto = secure_url;
+&nbsp;
+        await model.save();
+&nbsp;
+&nbsp;
+        res.json(model);
     } catch (error) {
 <span class="cstat-no" title="statement not covered" >        res.status(400).json(error)</span>
     }
 };
 &nbsp;
 module.exports = {
-  updateImageCloudinary
+    updateImageCloudinary
 };
 &nbsp;</pre></td></tr></table></pre>
 
@@ -256,7 +247,7 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-12-09T17:17:48.490Z
+                at 2023-12-10T03:44:49.788Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

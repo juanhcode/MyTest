@@ -2,7 +2,8 @@ const { faker } = require('@faker-js/faker');
 const request = require('supertest');
 const server = require('../index');
 const app = request(server)
-const token = process.env.TOKEN_TEST
+require('dotenv').config();
+let token = process.env.TOKEN
 
 describe('Test crear resultado de prueba', () => {
     it('Post - Caso exitoso', async () => {
@@ -13,7 +14,7 @@ describe('Test crear resultado de prueba', () => {
                 casos_no_ejecutados: faker.word.words(),
                 fallos: faker.word.words(),
                 exitos: faker.word.words(),
-                caso_de_prueba_id: 6
+                caso_de_prueba_id: 1
             });
         expect(res.statusCode).toEqual(201);
     });

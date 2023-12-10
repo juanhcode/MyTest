@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">83.33% </span>
+                <span class="strong">8.33% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>10/12</span>
+                <span class='fraction'>1/12</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">50% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>2/4</span>
+                <span class='fraction'>0/4</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>3/3</span>
+                <span class='fraction'>0/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">81.81% </span>
+                <span class="strong">9.09% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>9/11</span>
+                <span class='fraction'>1/11</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -84,39 +84,39 @@
 <a name='L19'></a><a href='#L19'>19</a>
 <a name='L20'></a><a href='#L20'>20</a>
 <a name='L21'></a><a href='#L21'>21</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">21x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span></td><td class="text"><pre class="prettyprint lang-js">function verificarPermisos(permisos) {
-    return (req, res, next) =&gt; {
-        const usuario = req.usuario; // Suponiendo que tienes información del usuario en la solicitud
-        const permisosUsuario = req.miInformacion.permisos;
-        console.log("PERMISOS ACTUALES      " + permisosUsuario);
-        <span class="missing-if-branch" title="if path not taken" >I</span>if (!usuario) {
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span></td><td class="text"><pre class="prettyprint lang-js">function <span class="fstat-no" title="function not covered" >verificarPermisos(</span>permisos) {
+<span class="cstat-no" title="statement not covered" >    return <span class="fstat-no" title="function not covered" >(r</span>eq, res, next) =&gt; {</span>
+        const usuario = <span class="cstat-no" title="statement not covered" >req.usuario;</span> // Suponiendo que tienes información del usuario en la solicitud
+        const permisosUsuario = <span class="cstat-no" title="statement not covered" >req.miInformacion.permisos;</span>
+<span class="cstat-no" title="statement not covered" >        console.log("PERMISOS ACTUALES      " + permisosUsuario);</span>
+<span class="cstat-no" title="statement not covered" >        if (!usuario) {</span>
 <span class="cstat-no" title="statement not covered" >            return res.status(401).json({ mensaje: 'No autorizado' });</span>
         }
 &nbsp;
-        const tienePermisos = permisos.some(permiso =&gt; permisosUsuario.includes(permiso));
+        const tienePermisos = <span class="cstat-no" title="statement not covered" >permisos.some(<span class="fstat-no" title="function not covered" >pe</span>rmiso =&gt; <span class="cstat-no" title="statement not covered" >permisosUsuario.includes(permiso))</span>;</span>
 &nbsp;
 &nbsp;
-        <span class="missing-if-branch" title="else path not taken" >E</span>if (!tienePermisos) {
-            return res.status(403).json({ mensaje: 'Permiso denegado' });
+<span class="cstat-no" title="statement not covered" >        if (!tienePermisos) {</span>
+<span class="cstat-no" title="statement not covered" >            return res.status(403).json({ mensaje: 'Permiso denegado' });</span>
         }
 &nbsp;
 <span class="cstat-no" title="statement not covered" >        next();</span>
@@ -130,7 +130,7 @@ module.exports = verificarPermisos</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-12-09T23:29:31.051Z
+                at 2023-12-10T03:44:49.788Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
