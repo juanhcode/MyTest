@@ -44,7 +44,7 @@ describe('Pruebas de inicio de sesión', () => {
         expect(parsedResponse.errors[0].msg).toBe('El correo es obligatorio');
         expect(parsedResponse.errors[2].msg).toBe('La contraseña es obligatoria');
     });
-    it('Debería fallar el inicio de sesión si se proporciona un SQL Injection en el nombre de usuario', async () => {
+    it('Debería fallar el inicio de sesión si se proporciona un SQL Injection en el correo', async () => {
         const response = await app
             .post('/v1/login')
             .send({

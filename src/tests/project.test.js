@@ -2,7 +2,8 @@ const { faker } = require('@faker-js/faker');
 const request = require('supertest');
 const server = require('../index');
 const app = request(server)
-const token = process.env.TOKEN_TEST
+require('dotenv').config();
+let token = process.env.TOKEN
 
 describe('Test crear proyecto', () => {
     it('Post - Caso exitoso', async () => {
