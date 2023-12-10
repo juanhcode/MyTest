@@ -18,7 +18,7 @@ const pdf = require('./v1/routes/pdf.routes');
 const seguimiento = require('./v1/routes/seguimiento.routes');
 const permiso = require('./v1/routes/permiso.route')
 const permisoUsuario = require('./v1/routes/permisoUsuario.route')
-
+const pruebaVerificarPermiso = require('./v1/routes/verifyPermiso.routes');
 app.use(morgan('dev'));
 app.use(express.json());
 app.use(cors());
@@ -40,6 +40,7 @@ app.use('/v1/reportPDF', pdf);
 app.use('/v1/seguimiento', seguimiento);
 app.use('/v1/permiso',permiso);
 app.use('/v1/permisoUsuario',permisoUsuario);
+app.use('/v1/prueba',pruebaVerificarPermiso);
 
 app.get('/', (req, res) => {
   return res.status(200).json({

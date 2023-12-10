@@ -127,3 +127,30 @@ describe('Test actualizar seguimientos', () => {
         expect(res.statusCode).toEqual(404);
     });
 });
+
+describe('Test obtener casos de prueba', () => {
+
+    it('GET - Seguimientos exitoso', async () => {
+        const id = 1;
+        const res = await app
+            .get(`/v1/seguimiento/${id}`)
+            .set('Authorization', `Bearer ${jwt}`)
+        expect(res.statusCode).toEqual(200);
+    });
+    it('GET - Intentar obtener seguimientos de id que no existe', async () => {
+        const proyectoIdInexistente = 999;
+        const res = await app
+            .get(`/v1/seguimiento/${proyectoIdInexistente}`)
+            .set('Authorization', `Bearer ${jwt}`);
+        expect(res.statusCode).toEqual(200);
+        expect(res.body.error).toBe(`No hay seguimientos para este caso`);
+    });
+    it('GET - Entrada incorrecta', async () => {
+        const proyectoIdInexistente = 'd';
+        const res = await app
+            .get(`/v1/seguimiento/${proyectoIdInexistente}`)
+            .set('Authorization', `Bearer ${jwt}`);
+        expect(res.statusCode).toEqual(500);
+        expect(res.body.error).toBe(`Error al obtener todos los seguimientos`);
+    });
+});

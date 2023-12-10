@@ -62,3 +62,40 @@ describe('Test eliminar permisos de usuario', () => {
         expect(res.statusCode).toEqual(200);
     });    
 });
+
+describe('Test verificar permisos de usuario admin', () => {
+    it('Get - Permiso fallido', async () => {
+        const res = await app
+            .get('/v1/prueba')
+            .set('Authorization', `Bearer ${jwt}`);
+        expect(res.statusCode).toEqual(403);
+    });  
+});
+
+
+describe('Test obtener permisos de usuario', () => {
+
+    it('GET - Permisos de usuario exitoso', async () => {
+        const id = 1;
+        const res = await app
+            .get(`/v1/permisoUsuario/${id}`)
+            .set('Authorization', `Bearer ${jwt}`)
+        expect(res.statusCode).toEqual(200);
+    });
+    it('GET - Intentar obtener seguimientos de id que no existe', async () => {
+        const proyectoIdInexistente = 999;
+        const res = await app
+            .get(`/v1/permisoUsuario/${proyectoIdInexistente}`)
+            .set('Authorization', `Bearer ${jwt}`);
+        expect(res.statusCode).toEqual(200);
+        expect(res.body.error).toBe(`No hay permisos para el usuario`);
+    });
+    it('GET - Entrada incorrecta', async () => {
+        const proyectoIdInexistente = 'd';
+        const res = await app
+            .get(`/v1/permisoUsuario/${proyectoIdInexistente}`)
+            .set('Authorization', `Bearer ${jwt}`);
+        expect(res.statusCode).toEqual(500);
+        expect(res.body.error).toBe(`Error al obtener todos los permisos del usuario`);
+    });
+});

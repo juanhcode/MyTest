@@ -1,8 +1,7 @@
 function verificarPermisos(permisos) {
     return (req, res, next) => {
-        const usuario = req.usuario; // Suponiendo que tienes información del usuario en la solicitud
+        const usuario = req.usuario;
         const permisosUsuario = req.miInformacion.permisos;
-        console.log("PERMISOS ACTUALES      " + permisosUsuario);
         if (!usuario) {
             return res.status(401).json({ mensaje: 'No autorizado' });
         }

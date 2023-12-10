@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">56.52% </span>
+                <span class="strong">82.6% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>13/23</span>
-            </div>
-        
-            
-            <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
-                <span class="quiet">Branches</span>
-                <span class='fraction'>0/2</span>
+                <span class='fraction'>19/23</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">50% </span>
-                <span class="quiet">Functions</span>
-                <span class='fraction'>2/4</span>
+                <span class="quiet">Branches</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">59.09% </span>
+                <span class="strong">75% </span>
+                <span class="quiet">Functions</span>
+                <span class='fraction'>3/4</span>
+            </div>
+        
+            
+            <div class='fl pad1y space-right2'>
+                <span class="strong">86.36% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>13/22</span>
+                <span class='fraction'>19/22</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line medium'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -137,18 +137,18 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">12x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -187,19 +187,19 @@ const crearPermisoUsuario = async (req, res) =&gt; {
     }
 }
 &nbsp;
-const getAllPermisosByUser = <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
-    const id = <span class="cstat-no" title="statement not covered" >req.params.id;</span>
-<span class="cstat-no" title="statement not covered" >    try {</span>
-        const allPermisosByUser = <span class="cstat-no" title="statement not covered" >await permisoUsuarioServicio.getPermisosByUsuario(id);</span>
-<span class="cstat-no" title="statement not covered" >        if(allPermisosByUser.length &gt; 0){</span>
+const getAllPermisosByUser = async (req, res) =&gt; {
+    const id = req.params.id;
+    try {
+        const allPermisosByUser = await permisoUsuarioServicio.getPermisosByUsuario(id);
+        <span class="missing-if-branch" title="if path not taken" >I</span>if(allPermisosByUser.length &gt; 0){
             const nombresDePermisos = <span class="cstat-no" title="statement not covered" >allPermisosByUser.map(<span class="fstat-no" title="function not covered" >it</span>em =&gt; <span class="cstat-no" title="statement not covered" >item.permiso.nombre)</span>;</span>
 <span class="cstat-no" title="statement not covered" >            res.status(200).json(nombresDePermisos);</span>
         }else{
-<span class="cstat-no" title="statement not covered" >            res.status(200).json({ error: 'No hay permisos para el usuario' });</span>
+            res.status(200).json({ error: 'No hay permisos para el usuario' });
         }
         
     } catch (error) {
-<span class="cstat-no" title="statement not covered" >        res.status(500).json({ error: 'Error al obtener todos los permisos del usuario' });</span>
+        res.status(500).json({ error: 'Error al obtener todos los permisos del usuario' });
     }
 }
 &nbsp;
@@ -223,7 +223,7 @@ module.exports = {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-12-10T03:44:49.788Z
+                at 2023-12-10T04:42:59.028Z
             </div>
         <script src="../../prettify.js"></script>
         <script>
